@@ -1,0 +1,77 @@
+﻿
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Sample</title>
+    <style>
+        nav, footer {
+            display: flex;
+            justify-content: space-between;
+            width: 80%;
+            margin: auto;
+            height: 100px;
+            align-items: center;
+            background-color: black;
+        }
+
+        footer {
+            color: white;
+            height: 50px;
+            justify-content: center;
+        }
+
+        .logo {
+            font-size: 35px;
+            color: white;
+        }
+
+        .menuBox ul {
+            display: flex;
+            list-style-type: none;
+        }
+
+            .menuBox ul li {
+                cursor: pointer;
+                width: 150px;
+                padding: 25px;
+                background-color: orange;
+                display: block;
+                margin: 0 15px;
+                font-size: 20px;
+                text-align: center;
+                font-family: sans-serif;
+                font-weight: bold;
+            }
+
+                .menuBox ul li a {
+                    text-decoration: none;
+                }
+
+                .menuBox ul li:hover {
+                    background-color: darkorange;
+                }
+
+        section {
+            height: 400px;
+            width: 80%;
+            margin: 0 auto;
+            padding: 0;
+        }
+    </style>
+</head>
+
+    <!-- HEADER BASLANGICI -->
+    <nav>
+        <div class="logo">
+            <h4>Wissen</h4>
+        </div>
+        <div class="menuBox">
+            <ul>
+                <li><a href="Home">Anasayfa</a></li>
+                <li><a href="Hakkımda">Hakkımda</a></li>
+                <li><a href="İletisim">İletişim</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- HEADER BİTİŞİ -->
