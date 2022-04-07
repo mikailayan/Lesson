@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-  
-    <title>MVC_Proje1</title>
-    <style>
+    <link href="~/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/css/style.css" rel="stylesheet" />
+    <title>@ViewBag.Mesaj  MVC_Proje1</title>
+    @*<style>
         .nav-bar-top {
             background-color: #2c3e50;
         }
@@ -27,12 +27,12 @@
             text-align: center;
             color: white;
         }
-    </style>
+    </style>*@
 
 </head>
 <body>
     <!-- header başlangıcı -->
-    <header>
+    <header style="height:15px;">
         <nav class="navbar navbar-expand-lg nav-bar-top fixed-top">
             <div class="container-fluid">
                 <a class="navbar-brand text-white fs-3 bg-danger px-3 rounded" href="#">Wissen Blog</a>
@@ -42,17 +42,17 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active text-white fs-4" aria-current="page" href="#">Anasayfa</a>
+                            <a class="nav-link active text-white fs-4" aria-current="page" href="Home">Anasayfa</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white fs-4" href="#">Hakkımızda</a>
+                            <a class="nav-link text-white fs-4" href="Hakkimizda">Hakkımızda</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-white fs-4" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Dropdown
+                            <a class="nav-link dropdown-toggle text-white fs-4" href="Dersler" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                               Dersler
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item " href="#">HTML</a></li>
+                                <li><a class="dropdown-item " href="Dersler">HTML</a></li>
                                 <li><a class="dropdown-item " href="#">CSS </a></li>
                                 <li><a class="dropdown-item " href="#">Bootsrap </a></li>
                                 <li><a class="dropdown-item " href="#">JavaScript </a></li>
@@ -68,7 +68,7 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white fs-4" href="#">İletişim</a>
+                            <a class="nav-link text-white fs-4" href="Iletisim">İletişim</a>
                         </li>
                     </ul>
                     <form class="d-flex">
@@ -82,10 +82,10 @@
     <!-- header bitişi -->
     <!-- section başlangıcı -->
     <section class="mt-5">
-        
         @RenderBody();
 
     </section>
+   
     <!-- section bitişi -->
     <!-- footer başlangıç -->
     <footer>
@@ -95,9 +95,9 @@
     </footer>
     <!-- footer bitiş -->
     <!-- scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="~/static/js/script.js"></script>
+    <script src="~/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/jquery-3.6.0.min.js"></script>  
+    <script src="~/js/script.js"></script>
     <!-- scripts -->
 </body>
 </html>

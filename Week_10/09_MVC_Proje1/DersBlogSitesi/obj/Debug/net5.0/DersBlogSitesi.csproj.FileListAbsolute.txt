@@ -34,3 +34,8 @@ C:\Users\Web ve Mobil Prog\source\Lesson\Week_10\09_MVC_Proje1\DersBlogSitesi\ob
 C:\Users\Web ve Mobil Prog\source\Lesson\Week_10\09_MVC_Proje1\DersBlogSitesi\obj\Debug\net5.0\DersBlogSitesi.Views.pdb
 C:\Users\Web ve Mobil Prog\source\Lesson\Week_10\09_MVC_Proje1\DersBlogSitesi\obj\Debug\net5.0\DersBlogSitesi.csproj.CopyComplete
 C:\Users\Web ve Mobil Prog\source\Lesson\Week_10\09_MVC_Proje1\DersBlogSitesi\obj\Debug\net5.0\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Users\Web ve Mobil Prog\source\Lesson\Week_10\09_MVC_Proje1\DersBlogSitesi\obj\Debug\net5.0\Razor\Views\Hakkimizda\Index.cshtml.g.cs
+C:\Users\Web ve Mobil Prog\source\Lesson\Week_10\09_MVC_Proje1\DersBlogSitesi\obj\Debug\net5.0\Razor\Views\Iletisim\Index.cshtml.g.cs
+C:\Users\Web ve Mobil Prog\source\Lesson\Week_10\09_MVC_Proje1\DersBlogSitesi\obj\Debug\net5.0\Razor\Views\Dersler\Index.cshtml.g.cs
+C:\Users\Web ve Mobil Prog\source\Lesson\Week_10\09_MVC_Proje1\DersBlogSitesi\obj\Debug\net5.0\Razor\Views\Shared\Layout.cshtml.g.cs
+C:\Users\Web ve Mobil Prog\source\Lesson\Week_10\09_MVC_Proje1\DersBlogSitesi\obj\Debug\net5.0\Razor\Views\yeni\Index.cshtml.g.cs

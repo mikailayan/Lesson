@@ -26,7 +26,8 @@ namespace DersBlogSitesi
             {
                 app.UseDeveloperExceptionPage();
             }
-
+            // Bu middleware sayesinde wwwroot klasörü statik dsoyalarýmýz için kullanýlabilir hale getirelecektir.
+            app.UseStaticFiles();
             app.UseRouting();
 
             app.UseEndpoints(endpoints =>

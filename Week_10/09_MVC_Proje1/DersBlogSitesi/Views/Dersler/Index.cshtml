@@ -1,0 +1,36 @@
+﻿@model List<DersBlogSitesi.Models.Lesson>
+@*<ul>
+    @{ 
+        foreach (var lesson in Model)
+        {
+            <li>
+                @lesson.LessonName
+            </li>
+        }
+    }
+</ul>*@
+
+<table class="table table-warning border-dark w-50">
+    <thead>
+        <tr class="table-active">
+
+            <th scope="col">ID</th>
+            <th scope="col">Name</th>
+            <th scope="col">cat</th>
+        </tr>
+    </thead>
+    <tbody>
+        @{
+            foreach (var lesson in Model)
+            {
+                <tr>
+                    <td>@lesson.ID </td>
+                    <td> @lesson.LessonName</td>
+                    <td>@lesson.Category </td>
+                </tr>
+           
+
+        }
+        }
+        </tbody>
+    </table>
