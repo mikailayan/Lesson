@@ -1,0 +1,38 @@
+﻿@using MobilyaShowRoom.Models;
+@{
+    Layout = "_Layout";
+
+}
+@{
+    Product product = ViewBag.Product;
+    ViewBag.Title = product.ProductName + "Anasayfa";
+    @*<section>
+        <p>@product.ID</p>
+        <p>@product.ProductName</p>
+        <p>@product.ProductDetail</p>
+        <p>@product.Price</p>
+        <a href="@Url.ActionLink("index","Home")">Geri Dön</a>
+    </section>*@
+
+<div style="display:flex; justify-content:center; background-image:url(https://picsum.photos/id/130/500/900")">
+    <div class="card mb-3" style="max-width: 540px; ">
+        <div class="row g-0">
+            <div class="col-md-4">
+                <img src="@product.Resim" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h3 class="card-title">@product.ProductName</h3>
+                    <h5 class="card-title">@product.ProductDetail</h5>
+
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <p style="border:1px solid blue; width:auto; font-weight:bold;  text-align:center; color:deeppink" ;>@product.Price ₺</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    <a href="@Url.ActionLink("index","Product")" class="btn btn-primary">Product</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+}

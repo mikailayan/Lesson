@@ -11,14 +11,14 @@ namespace DersBlogSitesi.Controllers
     {
         public IActionResult Index()
         {
-            var makale = new List<Makale>
+            var makale = new List<Article>
             {   
-                new Makale  {ID=1, Header="dawdwa", Content="fwefwe" },
-                new Makale  {ID=2, Header="dawdwa", Content="fwefwe" },
-                new Makale  {ID=3, Header="dawdwa", Content="fwefwe" },
-                new Makale  {ID=4, Header="dawdwa", Content="fwefwe" },
-                new Makale  {ID=5, Header="dawdwa", Content="fwefwe" },
-                new Makale  {ID=6, Header="dawdwa", Content="fwefwe" },
+                new Article  {ID=1, Header="dawdwa", Content="fwefwe" },
+                new Article  {ID=2, Header="dawdwa", Content="fwefwe" },
+                new Article  {ID=3, Header="dawdwa", Content="fwefwe" },
+                new Article  {ID=4, Header="dawdwa", Content="fwefwe" },
+                new Article  {ID=5, Header="dawdwa", Content="fwefwe" },
+                new Article  {ID=6, Header="dawdwa", Content="fwefwe" },
 
 
 
