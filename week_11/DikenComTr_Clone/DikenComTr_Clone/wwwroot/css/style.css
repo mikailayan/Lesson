@@ -7,13 +7,13 @@ body{
     background-color: #f6f5f2;
 }
 .nav-content ul {
-      list-style: none;
-      border-bottom: 1px solid #e3e3e3;
-      border-top: 1px solid #e3e3e3;
-      border-left: 1px solid #e3e3e3;
-      margin-bottom:0px !important; 
-      
- }
+    list-style: none;
+    border-bottom: 1px solid #e3e3e3;
+    border-top: 1px solid #e3e3e3;
+    border-left: 1px solid #e3e3e3;
+    margin-bottom: 0px !important;
+    
+}
 .nav-content ul li{
    height:100%;
    border-right: 1px solid #e3e3e3;
@@ -174,6 +174,26 @@ head{
 }
 .footer-text p{
     color: white;
+}
+#menu-btn{
+    display:none;
+}
+@media (max-width:768px){
+   nav div ul {
+      flex-direction:column;
+     
+   }
+    nav {
+        display: none;
+    }
+    #menu-btn {
+        display: initial;
+    }
+}
+@media (min-width:768px) {
+    nav {
+        display: initial !important;
+    }
 }
 
 
