@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Web ve Mobil Prog\\source\\Lesson\\week_11\\DikenComTr_Clone\\dikencomtr_clone\\DikenComTr_Clone.csproj": {}
+    "C:\\Users\\Web ve Mobil Prog\\source\\Lesson\\week_11\\DikenComTr_Clone\\DikenComTr_Clone\\DikenComTr_Clone.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Web ve Mobil Prog\\source\\Lesson\\week_11\\DikenComTr_Clone\\dikencomtr_clone\\DikenComTr_Clone.csproj": {
+    "C:\\Users\\Web ve Mobil Prog\\source\\Lesson\\week_11\\DikenComTr_Clone\\DikenComTr_Clone\\DikenComTr_Clone.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Web ve Mobil Prog\\source\\Lesson\\week_11\\DikenComTr_Clone\\dikencomtr_clone\\DikenComTr_Clone.csproj",
+        "projectUniqueName": "C:\\Users\\Web ve Mobil Prog\\source\\Lesson\\week_11\\DikenComTr_Clone\\DikenComTr_Clone\\DikenComTr_Clone.csproj",
         "projectName": "DikenComTr_Clone",
-        "projectPath": "C:\\Users\\Web ve Mobil Prog\\source\\Lesson\\week_11\\DikenComTr_Clone\\dikencomtr_clone\\DikenComTr_Clone.csproj",
+        "projectPath": "C:\\Users\\Web ve Mobil Prog\\source\\Lesson\\week_11\\DikenComTr_Clone\\DikenComTr_Clone\\DikenComTr_Clone.csproj",
         "packagesPath": "C:\\Users\\Web ve Mobil Prog\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Web ve Mobil Prog\\source\\Lesson\\week_11\\DikenComTr_Clone\\dikencomtr_clone\\obj\\",
+        "outputPath": "C:\\Users\\Web ve Mobil Prog\\source\\Lesson\\week_11\\DikenComTr_Clone\\DikenComTr_Clone\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Web ve Mobil Prog\\AppData\\Roaming\\NuGet\\NuGet.Config",
