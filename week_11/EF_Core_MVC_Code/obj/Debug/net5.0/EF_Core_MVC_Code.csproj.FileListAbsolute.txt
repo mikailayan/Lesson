@@ -146,3 +146,9 @@ C:\Users\Web ve Mobil Prog\source\Lesson\week_11\EF_Core_MVC_Code\obj\Debug\net5
 C:\Users\Web ve Mobil Prog\source\Lesson\week_11\EF_Core_MVC_Code\obj\Debug\net5.0\EF_Core_MVC_Code.genruntimeconfig.cache
 C:\Users\Web ve Mobil Prog\source\Lesson\week_11\EF_Core_MVC_Code\obj\Debug\net5.0\Razor\Views\Tur\Index.cshtml.g.cs
 C:\Users\Web ve Mobil Prog\source\Lesson\week_11\EF_Core_MVC_Code\obj\Debug\net5.0\Razor\Views\Tur\Details.cshtml.g.cs
+C:\Users\Web ve Mobil Prog\source\Lesson\week_11\EF_Core_MVC_Code\obj\Debug\net5.0\Razor\Views\Tur\Edit.cshtml.g.cs
+C:\Users\Web ve Mobil Prog\source\Lesson\week_11\EF_Core_MVC_Code\obj\Debug\net5.0\Razor\Views\Tur\Delete.cshtml.g.cs
+C:\Users\Web ve Mobil Prog\source\Lesson\week_11\EF_Core_MVC_Code\obj\Debug\net5.0\Razor\Views\Tur\Create.cshtml.g.cs
+C:\Users\Web ve Mobil Prog\source\Lesson\week_11\EF_Core_MVC_Code\obj\Debug\net5.0\Razor\Views\YayinEvleri\Index.cshtml.g.cs
+C:\Users\Web ve Mobil Prog\source\Lesson\week_11\EF_Core_MVC_Code\obj\Debug\net5.0\Razor\Views\YayinEvleri\Details.cshtml.g.cs
+C:\Users\Web ve Mobil Prog\source\Lesson\week_11\EF_Core_MVC_Code\obj\Debug\net5.0\Razor\Views\YayinEvleri\Edit.cshtml.g.cs

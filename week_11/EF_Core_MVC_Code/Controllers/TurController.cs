@@ -30,5 +30,48 @@ namespace EF_Core_MVC_Code.Controllers
             var tur =_context.Turlers.Find(id);
             return View(tur);
         }
+        //GET_düzenlenecek kitabın bilgilerini göster
+         public IActionResult Edit(int id)
+        {
+            var tur =_context.Turlers.Find(id);
+            return View(tur);
+        }
+        [HttpPost]
+        public IActionResult Edit(Turler tur)
+        {
+            if (ModelState.IsValid)
+            {
+            _context.Update(tur); //Bu satır sadece contextimizi güncelledi.
+            _context.SaveChanges(); //Veri tabanında güncelle.
+            return RedirectToAction("Index"); //Gitmek istediğimiz action
+            }
+            return View(tur);
+        }
+
+        //GET- Silinecek kitap türü sayfasını göster
+        public IActionResult Delete(int id)
+        {
+            var tur =_context.Turlers.Find(id);
+            return View(tur);
+        }
+        [HttpPost,ActionName("Delete")]
+        public IActionResult DeleteConfirmed(int id)
+        {
+            var silinecekKitapTuru = _context.Turlers.Find(id);
+            _context.Turlers.Remove(silinecekKitapTuru);
+            _context.SaveChanges();
+            return RedirectToAction("Index");
+        }
+        public IActionResult Create()
+        {
+            return View();
+        }
+        [HttpPost]
+        public IActionResult Create(Turler tur)
+        {
+            _context.Add(tur);
+            _context.SaveChanges();
+            return RedirectToAction("Index");
+        }
     }
 }

@@ -1,0 +1,16 @@
+@model Yayinevleri
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<form>
+<label class="control-label">YayinEvi Id</label>
+<label class="control-label" asp-for="Id" >@Model.Id</label> <br>
+<label>Yayin Evi Ad:</label>
+<input type="text" asp-for="Ad"> <br>
+<label>Yayin Evi Adres:</label>
+<input type="text" asp-for="Adres"> <br>
+<label>Yayin Evi Tel:</label>
+<input type="text" asp-for="Tel"> <br>
+ <input type="submit" value="Değişiklikleri Kaydet" class="btn btn-success">
+</form>

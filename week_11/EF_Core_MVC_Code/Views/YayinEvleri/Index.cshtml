@@ -1,0 +1,32 @@
+@model List<EF_Core_MVC_Code.Models.Yayinevleri>
+
+@{
+    ViewData["Title"] = "Yayın EVleri";
+}
+<h1>Yayın Evleri</h1>
+
+<a asp-action="Create">Yeni Yayın Evi</a>
+
+<table class="table table-dark w-50">
+<thead>
+    <tr>
+        <th>Yayın Evi Id</th>
+        <th>Yayın Evi</th>
+        <th>Yapılacak İşlem</th>
+    </tr>
+</thead>
+<tbody>
+    @foreach (var ev in Model)
+    {
+        <tr>
+            <td>@ev.Id</td>
+            <td>@ev.Ad</td>
+            <td>
+                <a class="btn btn-sm btn-success" asp-action="Details" asp-route-id="@ev.Id" >Detaylar</a>
+                <a class="btn btn-sm btn-warning" asp-action="Edit" asp-route-id="@ev.Id" >Düzenle</a>
+                <a class="btn btn-sm btn-danger" asp-action="Delete" asp-route-id="@ev.Id" >Sil</a>
+            </td>
+        </tr>
+    }
+</tbody>
+</table>
