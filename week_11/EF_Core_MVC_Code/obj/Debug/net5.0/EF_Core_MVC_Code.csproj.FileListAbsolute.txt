@@ -152,3 +152,9 @@ C:\Users\Web ve Mobil Prog\source\Lesson\week_11\EF_Core_MVC_Code\obj\Debug\net5
 C:\Users\Web ve Mobil Prog\source\Lesson\week_11\EF_Core_MVC_Code\obj\Debug\net5.0\Razor\Views\YayinEvleri\Index.cshtml.g.cs
 C:\Users\Web ve Mobil Prog\source\Lesson\week_11\EF_Core_MVC_Code\obj\Debug\net5.0\Razor\Views\YayinEvleri\Details.cshtml.g.cs
 C:\Users\Web ve Mobil Prog\source\Lesson\week_11\EF_Core_MVC_Code\obj\Debug\net5.0\Razor\Views\YayinEvleri\Edit.cshtml.g.cs
+C:\Users\Web ve Mobil Prog\source\Lesson\week_11\EF_Core_MVC_Code\obj\Debug\net5.0\Razor\Views\YayinEvleri\Delete.cshtml.g.cs
+C:\Users\Web ve Mobil Prog\source\Lesson\week_11\EF_Core_MVC_Code\obj\Debug\net5.0\Razor\Views\YayinEvleri\Create.cshtml.g.cs
+C:\Users\Web ve Mobil Prog\source\Lesson\week_11\EF_Core_MVC_Code\obj\Debug\net5.0\Razor\Views\Kitaplar\Details.cshtml.g.cs
+C:\Users\Web ve Mobil Prog\source\Lesson\week_11\EF_Core_MVC_Code\obj\Debug\net5.0\Razor\Views\Kitaplar\Index.cshtml.g.cs
+C:\Users\Web ve Mobil Prog\source\Lesson\week_11\EF_Core_MVC_Code\obj\Debug\net5.0\Razor\Views\Kitaplar\Edit.cshtml.g.cs
+C:\Users\Web ve Mobil Prog\source\Lesson\week_11\EF_Core_MVC_Code\obj\Debug\net5.0\Razor\Views\Kitaplar\Create.cshtml.g.cs

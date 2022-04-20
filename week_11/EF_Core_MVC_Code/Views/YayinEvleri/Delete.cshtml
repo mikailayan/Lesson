@@ -1,0 +1,23 @@
+@model Yayinevleri
+@{
+    ViewData["Title"] = "Details";
+}
+<h1 class="display-3">Yayın evi Sil</h1>
+
+<div>
+    <h4>Yayin evi</h4>
+    <h5>ev ID:</h5>
+    <p>@Model.Id</p>
+    <h5>Yayın evi Adı</h5>
+    <p>@Model.Ad</p>
+     <h5>Yayın evi Adresi</h5>
+    <p>@Model.Adres</p>
+    <h5>Yayın evi Tel</h5>
+    <p>@Model.Tel</p>
+</div>
+<form asp-action="Delete">
+    <input type="hidden" asp-for="Id">
+    <input type="submit" value="yayin evini Sil" class="btn btn-sm btn-danger">
+</form>
+
+<a asp-action="index">Kitap Türlerine Dön</a>

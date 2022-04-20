@@ -15639,6 +15639,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\Web ve Mobil Prog\\source\\Lesson\\week_11\\EF_Core_MVC_Code\\Views\\Kitaplar\\Details.cshtml",
+      "TargetPath": "Views\\Kitaplar\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\Web ve Mobil Prog\\source\\Lesson\\week_11\\EF_Core_MVC_Code\\Views\\YayinEvleri\\Details.cshtml",
       "TargetPath": "Views\\YayinEvleri\\Details.cshtml",
       "FileKind": "mvc"
@@ -15654,6 +15659,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\Web ve Mobil Prog\\source\\Lesson\\week_11\\EF_Core_MVC_Code\\Views\\Kitaplar\\Index.cshtml",
+      "TargetPath": "Views\\Kitaplar\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\Web ve Mobil Prog\\source\\Lesson\\week_11\\EF_Core_MVC_Code\\Views\\Tur\\Delete.cshtml",
       "TargetPath": "Views\\Tur\\Delete.cshtml",
       "FileKind": "mvc"
@@ -15661,6 +15671,11 @@
     {
       "FilePath": "c:\\Users\\Web ve Mobil Prog\\source\\Lesson\\week_11\\EF_Core_MVC_Code\\Views\\_ViewStart.cshtml",
       "TargetPath": "Views\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Web ve Mobil Prog\\source\\Lesson\\week_11\\EF_Core_MVC_Code\\Views\\Kitaplar\\Edit.cshtml",
+      "TargetPath": "Views\\Kitaplar\\Edit.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -15674,6 +15689,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\Web ve Mobil Prog\\source\\Lesson\\week_11\\EF_Core_MVC_Code\\Views\\YayinEvleri\\Delete.cshtml",
+      "TargetPath": "Views\\YayinEvleri\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\Web ve Mobil Prog\\source\\Lesson\\week_11\\EF_Core_MVC_Code\\Views\\YayinEvleri\\Edit.cshtml",
       "TargetPath": "Views\\YayinEvleri\\Edit.cshtml",
       "FileKind": "mvc"
@@ -15684,8 +15704,18 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\Web ve Mobil Prog\\source\\Lesson\\week_11\\EF_Core_MVC_Code\\Views\\YayinEvleri\\Create.cshtml",
+      "TargetPath": "Views\\YayinEvleri\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\Web ve Mobil Prog\\source\\Lesson\\week_11\\EF_Core_MVC_Code\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Web ve Mobil Prog\\source\\Lesson\\week_11\\EF_Core_MVC_Code\\Views\\Kitaplar\\Create.cshtml",
+      "TargetPath": "Views\\Kitaplar\\Create.cshtml",
       "FileKind": "mvc"
     },
     {

@@ -1,0 +1,17 @@
+@model Kitaplar
+@{
+    ViewData["Title"] = "Create";
+}
+
+<form asp-action="Create">
+    <input type="text" asp-for="Ad" placeholder="Ad">
+    <input type="text" asp-for="SayfaSayisi" placeholder="SayfaSayisi">
+    <input type="text" asp-for="Stok" placeholder="Stok">
+    <input type="text" asp-for="TurId" placeholder="TurID" asp-items="ViewBag.Tur">
+    <input type="text" asp-for="YazarId" placeholder="YazarId" asp-items="ViewBag.Yazar">
+    <input type="text" asp-for="YayinEviId" placeholder="YayinEviId" asp-items="ViewBag.YayinEvi">
+    <input type="submit" class="btn btn-success">
+    
+
+
+</form>

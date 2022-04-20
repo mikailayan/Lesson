@@ -40,6 +40,30 @@ namespace EF_Core_MVC_Code.Controllers
             return RedirectToAction("Index");
            
         }
+         public IActionResult Delete(int id)
+        {
+            var ev = _context.Yayinevleris.Find(id);
+            return View(ev);
+        }
+        [HttpPost]
+         public IActionResult Delete(Yayinevleri ev)
+        {
+            _context.Remove(ev);
+            _context.SaveChanges();
+            return RedirectToAction("Index");
+        }
+        public IActionResult Create(int id)
+        {
+            var ev = _context.Yayinevleris.Find(id);
+            return View(ev);
+        }
+        [HttpPost]
+        public IActionResult Create(Yayinevleri ev)
+        {
+            _context.Add(ev);
+            _context.SaveChanges();
+            return RedirectToAction("Index");
+        }
         
     }
 }

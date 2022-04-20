@@ -1,0 +1,17 @@
+@model Yayinevleri
+@{
+    ViewData["Title"] = "Create";
+}
+
+<div>
+<form asp-action="Create">
+<p>Yayin evi Adı Gir:</p>
+<input type="text" asp-for="Ad">
+<p>Yayin evi adresi Gir:</p>
+<input type="text" asp-for="Adres">
+<p>Yayin evi teli Gir:</p>
+<input type="text" asp-for="Tel">
+<input type="submit" class="btn btn-success">
+</form>
+</div>
+
