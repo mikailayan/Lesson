@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using Models;
+using EF_CodeFirst.Models.Entities;
 
 namespace Controllers
 {
@@ -18,7 +18,48 @@ namespace Controllers
 
         public IActionResult Index()
         {
-            return View();
+            return View(_context.Categories.ToList());
+        }
+        public IActionResult Create(string id)
+        {
+            var secilencategory = _context.Categories.Find(id);
+            return View(secilencategory);
+        }
+        [HttpPost]
+        public IActionResult Create(Category category)
+        {
+            _context.Add(category);
+            _context.SaveChanges();
+            return RedirectToAction("Index");
+        }
+         public IActionResult Detail(int id)
+        {
+            var secilencategory = _context.Categories.Find(id);
+            return View(secilencategory);
+        }
+         public IActionResult Update(int id)
+        {
+            var secilencategory = _context.Categories.Find(id);
+            return View(secilencategory);
+        }
+        [HttpPost]
+        public IActionResult Update(Category category)
+        {
+            _context.Update(category);
+            _context.SaveChanges();
+            return RedirectToAction("Index");
+        }
+         public IActionResult Delete(int id)
+        {
+            var secilencategory = _context.Categories.Find(id);
+            return View(secilencategory);
+        }
+        [HttpPost]
+        public IActionResult Delete(Category category)
+        {
+            _context.Remove(category);
+            _context.SaveChanges();
+            return RedirectToAction("Index");
         }
     }
 

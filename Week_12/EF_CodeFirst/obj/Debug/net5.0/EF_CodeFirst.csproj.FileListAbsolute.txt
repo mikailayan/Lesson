@@ -71,3 +71,7 @@ C:\Users\Web ve Mobil Prog\source\Lesson\Week_12\EF_CodeFirst\obj\Debug\net5.0\r
 C:\Users\Web ve Mobil Prog\source\Lesson\Week_12\EF_CodeFirst\obj\Debug\net5.0\EF_CodeFirst.pdb
 C:\Users\Web ve Mobil Prog\source\Lesson\Week_12\EF_CodeFirst\obj\Debug\net5.0\EF_CodeFirst.genruntimeconfig.cache
 C:\Users\Web ve Mobil Prog\source\Lesson\Week_12\EF_CodeFirst\obj\Debug\net5.0\Razor\Views\Category\Index.cshtml.g.cs
+C:\Users\Web ve Mobil Prog\source\Lesson\Week_12\EF_CodeFirst\obj\Debug\net5.0\Razor\Views\Category\Create.cshtml.g.cs
+C:\Users\Web ve Mobil Prog\source\Lesson\Week_12\EF_CodeFirst\obj\Debug\net5.0\Razor\Views\Category\Detail.cshtml.g.cs
+C:\Users\Web ve Mobil Prog\source\Lesson\Week_12\EF_CodeFirst\obj\Debug\net5.0\Razor\Views\Category\Delete.cshtml.g.cs
+C:\Users\Web ve Mobil Prog\source\Lesson\Week_12\EF_CodeFirst\obj\Debug\net5.0\Razor\Views\Category\Update.cshtml.g.cs

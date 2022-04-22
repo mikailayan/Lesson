@@ -1,5 +1,24 @@
-
+@model List<EF_CodeFirst.Models.Entities.Category>
 @{
     ViewData["Title"] = "Index";
 }
-<div> selam </div>
+
+<a class="nav-link text-dark" asp-area="" asp-controller="Category" asp-action="create">Create</a>
+<div class="row">
+    @foreach (var item in Model)
+    {
+        <div class="col-4">
+        <div class="card" style="width: 18rem;">
+            <img src="https://picsum.photos/id/27/300/200" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">@item.CategoryId</h5>
+                <h5 class="card-title">@item.CategoryName</h5>
+                <p class="card-text">@item.CategoryDescription</p>
+                 <a class="btn btn-success" asp-area="" asp-route-id="@item.CategoryId" asp-action="Detail">Detay</a>
+                 <a class="btn btn-warning" asp-area="" asp-route-id="@item.CategoryId"asp-action="Update">Düzenle</a>
+                 <a class="btn btn-danger" asp-area="" asp-route-id="@item.CategoryId" asp-action="Delete">Sil</a>
+            </div>
+        </div>
+    </div>
+    }
+</div>

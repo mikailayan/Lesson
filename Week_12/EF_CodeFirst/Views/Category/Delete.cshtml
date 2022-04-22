@@ -1,0 +1,28 @@
+@model EF_CodeFirst.Models.Entities.Category
+@{
+    ViewData["Title"] = "Detail";
+}
+
+
+
+
+<div class="card" style="width: 18rem;">
+  <img src="https://picsum.photos/id/27/300/200" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">@Model.CategoryId</h5>
+    <h5 class="card-title">@Model.CategoryName</h5>
+    <p class="card-text">@Model.CategoryDescription</p>
+    <a class="btn btn-success" asp-area="" asp-controller="category" asp-action="Index">Geri Dön</a>
+    <input type="text" class="btn btn-danger" onclick="func()" value="Sil">
+
+
+  </div>
+</div>
+  <form asp-action="Delete">
+        <input type="hidden" asp-for="CategoryId">
+        
+        <div id="kutu1">
+        <input id="silenButon" type="submit" class="btn btn-danger" value="Evet">
+        <input id="silemeyenButon" asp-action="Index" class="btn btn-danger" value="Hayır">
+        </div>
+    </form>

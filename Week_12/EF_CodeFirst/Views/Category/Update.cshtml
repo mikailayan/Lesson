@@ -1,0 +1,14 @@
+@model EF_CodeFirst.Models.Entities.Category
+@{
+    ViewData["Title"] = "Update";
+}
+
+<form asp-action="Update">
+<input type="hidden" asp-for="CategoryId">
+<label>categoriadı</label>
+<input type="text" asp-for="CategoryName">
+<label>categoriacıklama</label>
+<input type="text" asp-for="CategoryDescription">
+<input type="submit" class="btn btn-success">
+</form>
+

@@ -1,0 +1,10 @@
+@model EF_CodeFirst.Models.Entities.Category
+@{
+    ViewData["Title"] = "Create";
+}
+<div>selam</div>
+<form asp-action="Create">
+    <input type="text" asp-for="CategoryName" placeholder="name">
+    <input type="text" asp-for="CategoryDescription" placeholder="description">
+    <input type="submit" class="btn btn-success">
+</form>
