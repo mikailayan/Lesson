@@ -32,3 +32,21 @@ app.post("/createEmployee", async (req,res)=>{
 app.listen(3030,()=>{
     console.log("Server Çalışıyor....!!")
 })
+
+app.put("/updateEmployee", async (req,res)=> {
+    const newName = req.body.newName;
+    const newAge = req.body.newAge;
+    const id = req.body.id;
+    try {
+        await EmployeeModel.findById(id,(error,updatedEmployee)=>{
+            updatedEmployee.name= newName;
+            updatedEmployee.age= newAge;
+            updatedEmployee.save();
+
+
+        });
+    } catch (error) {
+        console.log(error);
+    }
+    res.json("updated");
+});

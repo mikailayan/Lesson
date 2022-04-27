@@ -21,13 +21,13 @@ using EF_2504.MVC;
 #nullable disable
 #nullable restore
 #line 2 "C:\Users\Web ve Mobil Prog\source\Lesson\Week_13\EF_2504\EF_2504.MVC\Views\_ViewImports.cshtml"
-using EF_2504.MVC.Models;
+using EF_2504.DAL.Entities;
 
 #line default
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"99464617055fdb505bb0bb7fd91f9b14f7b0d030", @"/Views/Home/Index.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"d5fc4fbf95acaa5fb2cba861a4f89aaf5016f601", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"6a16471e9520dd052b261e64a568202c60aa2cda", @"/Views/_ViewImports.cshtml")]
     public class Views_Home_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         #pragma warning disable 1998
