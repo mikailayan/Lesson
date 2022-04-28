@@ -23,12 +23,18 @@ function App() {
       .catch((err) => console.log(err))
   }, [employees])
 
+  const deleteEmployee=(id)=>{
+    axios.delete(`http://localhost:3030/deleteEmployee/${id}`);
+  };
+
   const createEmployee = () => {
     axios
       .post("http://localhost:3030/createEmployee", {
         name: name,
         age: age,
-        username: username
+        username: username,
+        url : url
+        
 
       }).then((res) => {
         alert("Employee Created")
@@ -48,19 +54,19 @@ function App() {
 
   return (
 
-    <div className="App" >
+    <div className="App"   >
       <div className='row'>
         {employees.map((employee) => (
-          <div className='col-md-4'>
-            <div className="card" style={{ width: '18rem' }}>
-              <img src="https://picsum.photos/id/26/300/200" className="card-img-top" alt="..." />
+          <div className='col-md-4 d-flex justify-content-around mb-3'>
+            <div className="card bg-dark text-white opacity-75" style={{ width: '18rem' } }>
+              <img src={employee.url == "" ? "https://picsum.photos/seed/picsum/300/260" :employee.url} className="card-img-top rounded-circle" alt="..." style={{height:'260px'}} />
               <div className="card-body">
                 <h5 className="card-title">{employee.name}</h5>
                 <p className="card-text">{employee.age}</p>
                 <input placeholder='Güncellenecek adı gir' type='text' onChange={(e) => SetNewName(e.target.value)} />
                 <input placeholder='Güncellenecek Yaşı gir' type='Number' onChange={(e) => SetNewAge(e.target.value)} />
                 <a href="#" className="btn btn-primary d-block" onClick={() => updateEmployee(employee._id)}>Güncelle</a>
-                <a href="#" className="btn btn-danger">Sil</a>
+                <a href="#" className="btn btn-danger" onClick={() => deleteEmployee(employee._id)}>Sil</a>
 
                 <h5 className="card-title">{employee.username}</h5>
               </div>

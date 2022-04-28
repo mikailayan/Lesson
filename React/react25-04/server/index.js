@@ -23,11 +23,16 @@ app.get("/getEmployees",(req,res)=>{
     })
 })
 app.post("/createEmployee", async (req,res)=>{
-    const employee = req.body
-    const newEmployee= new EmployeeModel(employee)
-    await newEmployee.save()
-    res.json(employee)
+    const employee = req.body;
+    const newEmployee= new EmployeeModel(employee);
+    await newEmployee.save();
+    res.json(employee);
 })
+app.delete("/deleteEmployee/:id", async (req,res) =>{
+    const id=req.params.id;
+    await EmployeeModel.findByIdAndRemove(id).exec();
+    res.send("deleted");
+});
 
 app.listen(3030,()=>{
     console.log("Server Çalışıyor....!!")
