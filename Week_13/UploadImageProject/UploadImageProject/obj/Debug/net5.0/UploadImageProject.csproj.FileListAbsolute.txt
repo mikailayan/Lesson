@@ -37,3 +37,42 @@ C:\Users\Web ve Mobil Prog\source\Lesson\Week_13\UploadImageProject\UploadImageP
 C:\Users\Web ve Mobil Prog\source\Lesson\Week_13\UploadImageProject\UploadImageProject\obj\Debug\net5.0\UploadImageProject.pdb
 C:\Users\Web ve Mobil Prog\source\Lesson\Week_13\UploadImageProject\UploadImageProject\obj\Debug\net5.0\UploadImageProject.genruntimeconfig.cache
 C:\Users\Web ve Mobil Prog\source\Lesson\Week_13\UploadImageProject\UploadImageProject\obj\Debug\net5.0\UploadImageProject.csproj.CopyComplete
+F:\github\Lesson\Week_13\UploadImageProject\UploadImageProject\bin\Debug\net5.0\appsettings.Development.json
+F:\github\Lesson\Week_13\UploadImageProject\UploadImageProject\bin\Debug\net5.0\appsettings.json
+F:\github\Lesson\Week_13\UploadImageProject\UploadImageProject\bin\Debug\net5.0\UploadImageProject.exe
+F:\github\Lesson\Week_13\UploadImageProject\UploadImageProject\bin\Debug\net5.0\UploadImageProject.deps.json
+F:\github\Lesson\Week_13\UploadImageProject\UploadImageProject\bin\Debug\net5.0\UploadImageProject.runtimeconfig.json
+F:\github\Lesson\Week_13\UploadImageProject\UploadImageProject\bin\Debug\net5.0\UploadImageProject.runtimeconfig.dev.json
+F:\github\Lesson\Week_13\UploadImageProject\UploadImageProject\bin\Debug\net5.0\UploadImageProject.dll
+F:\github\Lesson\Week_13\UploadImageProject\UploadImageProject\bin\Debug\net5.0\ref\UploadImageProject.dll
+F:\github\Lesson\Week_13\UploadImageProject\UploadImageProject\bin\Debug\net5.0\UploadImageProject.pdb
+F:\github\Lesson\Week_13\UploadImageProject\UploadImageProject\bin\Debug\net5.0\UploadImageProject.Views.dll
+F:\github\Lesson\Week_13\UploadImageProject\UploadImageProject\bin\Debug\net5.0\UploadImageProject.Views.pdb
+F:\github\Lesson\Week_13\UploadImageProject\UploadImageProject\obj\Debug\net5.0\UploadImageProject.csproj.AssemblyReference.cache
+F:\github\Lesson\Week_13\UploadImageProject\UploadImageProject\obj\Debug\net5.0\UploadImageProject.GeneratedMSBuildEditorConfig.editorconfig
+F:\github\Lesson\Week_13\UploadImageProject\UploadImageProject\obj\Debug\net5.0\UploadImageProject.AssemblyInfoInputs.cache
+F:\github\Lesson\Week_13\UploadImageProject\UploadImageProject\obj\Debug\net5.0\UploadImageProject.AssemblyInfo.cs
+F:\github\Lesson\Week_13\UploadImageProject\UploadImageProject\obj\Debug\net5.0\UploadImageProject.csproj.CoreCompileInputs.cache
+F:\github\Lesson\Week_13\UploadImageProject\UploadImageProject\obj\Debug\net5.0\UploadImageProject.MvcApplicationPartsAssemblyInfo.cache
+F:\github\Lesson\Week_13\UploadImageProject\UploadImageProject\obj\Debug\net5.0\UploadImageProject.RazorAssemblyInfo.cache
+F:\github\Lesson\Week_13\UploadImageProject\UploadImageProject\obj\Debug\net5.0\UploadImageProject.RazorAssemblyInfo.cs
+F:\github\Lesson\Week_13\UploadImageProject\UploadImageProject\obj\Debug\net5.0\staticwebassets\UploadImageProject.StaticWebAssets.Manifest.cache
+F:\github\Lesson\Week_13\UploadImageProject\UploadImageProject\obj\Debug\net5.0\staticwebassets\UploadImageProject.StaticWebAssets.xml
+F:\github\Lesson\Week_13\UploadImageProject\UploadImageProject\obj\Debug\net5.0\scopedcss\bundle\UploadImageProject.styles.css
+F:\github\Lesson\Week_13\UploadImageProject\UploadImageProject\obj\Debug\net5.0\UploadImageProject.TagHelpers.input.cache
+F:\github\Lesson\Week_13\UploadImageProject\UploadImageProject\obj\Debug\net5.0\UploadImageProject.TagHelpers.output.cache
+F:\github\Lesson\Week_13\UploadImageProject\UploadImageProject\obj\Debug\net5.0\UploadImageProject.RazorCoreGenerate.cache
+F:\github\Lesson\Week_13\UploadImageProject\UploadImageProject\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
+F:\github\Lesson\Week_13\UploadImageProject\UploadImageProject\obj\Debug\net5.0\Razor\Views\Home\UploadImage.cshtml.g.cs
+F:\github\Lesson\Week_13\UploadImageProject\UploadImageProject\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs
+F:\github\Lesson\Week_13\UploadImageProject\UploadImageProject\obj\Debug\net5.0\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+F:\github\Lesson\Week_13\UploadImageProject\UploadImageProject\obj\Debug\net5.0\Razor\Views\_ViewImports.cshtml.g.cs
+F:\github\Lesson\Week_13\UploadImageProject\UploadImageProject\obj\Debug\net5.0\Razor\Views\_ViewStart.cshtml.g.cs
+F:\github\Lesson\Week_13\UploadImageProject\UploadImageProject\obj\Debug\net5.0\UploadImageProject.RazorTargetAssemblyInfo.cache
+F:\github\Lesson\Week_13\UploadImageProject\UploadImageProject\obj\Debug\net5.0\UploadImageProject.RazorTargetAssemblyInfo.cs
+F:\github\Lesson\Week_13\UploadImageProject\UploadImageProject\obj\Debug\net5.0\UploadImageProject.Views.pdb
+F:\github\Lesson\Week_13\UploadImageProject\UploadImageProject\obj\Debug\net5.0\UploadImageProject.dll
+F:\github\Lesson\Week_13\UploadImageProject\UploadImageProject\obj\Debug\net5.0\ref\UploadImageProject.dll
+F:\github\Lesson\Week_13\UploadImageProject\UploadImageProject\obj\Debug\net5.0\UploadImageProject.pdb
+F:\github\Lesson\Week_13\UploadImageProject\UploadImageProject\obj\Debug\net5.0\UploadImageProject.genruntimeconfig.cache
+F:\github\Lesson\Week_13\UploadImageProject\UploadImageProject\obj\Debug\net5.0\UploadImageProject.csproj.CopyComplete

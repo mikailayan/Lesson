@@ -1,0 +1,11 @@
+﻿@model List<DatabaseImageProject.Models.Entities.Product>
+
+
+
+@foreach (var item in Model)
+{
+    <h3>@item.ProductName</h3>
+    <h3>@item.ProductPrice</h3>
+    <h3>@item.ProductImage</h3>
+
+}
