@@ -13,3 +13,18 @@ C:\Users\Web ve Mobil Prog\source\Lesson\Week_13\EF_2504\EF_2504.DAL\obj\Debug\n
 C:\Users\Web ve Mobil Prog\source\Lesson\Week_13\EF_2504\EF_2504.DAL\obj\Debug\net5.0\ref\EF_2504.DAL.dll
 C:\Users\Web ve Mobil Prog\source\Lesson\Week_13\EF_2504\EF_2504.DAL\obj\Debug\net5.0\EF_2504.DAL.pdb
 C:\Users\Web ve Mobil Prog\source\Lesson\Week_13\EF_2504\EF_2504.DAL\obj\Debug\net5.0\EF_2504.DAL.genruntimeconfig.cache
+F:\github\Lesson\Week_13\EF_2504\EF_2504.DAL\bin\Debug\net5.0\EF_2504.DAL.deps.json
+F:\github\Lesson\Week_13\EF_2504\EF_2504.DAL\bin\Debug\net5.0\EF_2504.DAL.runtimeconfig.json
+F:\github\Lesson\Week_13\EF_2504\EF_2504.DAL\bin\Debug\net5.0\EF_2504.DAL.runtimeconfig.dev.json
+F:\github\Lesson\Week_13\EF_2504\EF_2504.DAL\bin\Debug\net5.0\EF_2504.DAL.dll
+F:\github\Lesson\Week_13\EF_2504\EF_2504.DAL\bin\Debug\net5.0\ref\EF_2504.DAL.dll
+F:\github\Lesson\Week_13\EF_2504\EF_2504.DAL\bin\Debug\net5.0\EF_2504.DAL.pdb
+F:\github\Lesson\Week_13\EF_2504\EF_2504.DAL\obj\Debug\net5.0\EF_2504.DAL.csproj.AssemblyReference.cache
+F:\github\Lesson\Week_13\EF_2504\EF_2504.DAL\obj\Debug\net5.0\EF_2504.DAL.GeneratedMSBuildEditorConfig.editorconfig
+F:\github\Lesson\Week_13\EF_2504\EF_2504.DAL\obj\Debug\net5.0\EF_2504.DAL.AssemblyInfoInputs.cache
+F:\github\Lesson\Week_13\EF_2504\EF_2504.DAL\obj\Debug\net5.0\EF_2504.DAL.AssemblyInfo.cs
+F:\github\Lesson\Week_13\EF_2504\EF_2504.DAL\obj\Debug\net5.0\EF_2504.DAL.csproj.CoreCompileInputs.cache
+F:\github\Lesson\Week_13\EF_2504\EF_2504.DAL\obj\Debug\net5.0\EF_2504.DAL.dll
+F:\github\Lesson\Week_13\EF_2504\EF_2504.DAL\obj\Debug\net5.0\ref\EF_2504.DAL.dll
+F:\github\Lesson\Week_13\EF_2504\EF_2504.DAL\obj\Debug\net5.0\EF_2504.DAL.pdb
+F:\github\Lesson\Week_13\EF_2504\EF_2504.DAL\obj\Debug\net5.0\EF_2504.DAL.genruntimeconfig.cache

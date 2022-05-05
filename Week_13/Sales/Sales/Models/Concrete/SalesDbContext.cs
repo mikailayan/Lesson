@@ -23,7 +23,7 @@ namespace Sales.Models.Concrete
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Name=ConnectionStrings:SalesConn");
+            optionsBuilder.UseSqlServer("Server=DESKTOP-CKAIKM6; Database=SalesDbSabah; Trusted_Connection=true;");
         }
     }
 }

@@ -1,0 +1,66 @@
+﻿@model IEnumerable<Okul.DAL.Entities.Student>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.StudentName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StudentSurName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StudentDateOfBirth)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StudentDateOfRegistration)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StudentSemester)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Departmen)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.StudentName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StudentSurName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StudentDateOfBirth)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StudentDateOfRegistration)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StudentSemester)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Departmen.DepartmenId)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.StudentId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.StudentId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.StudentId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

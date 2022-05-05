@@ -1,0 +1,15 @@
+F:\github\Lesson\Week_14\Okul\Okul.DAL\bin\Debug\net5.0\Okul.DAL.deps.json
+F:\github\Lesson\Week_14\Okul\Okul.DAL\bin\Debug\net5.0\Okul.DAL.runtimeconfig.json
+F:\github\Lesson\Week_14\Okul\Okul.DAL\bin\Debug\net5.0\Okul.DAL.runtimeconfig.dev.json
+F:\github\Lesson\Week_14\Okul\Okul.DAL\bin\Debug\net5.0\Okul.DAL.dll
+F:\github\Lesson\Week_14\Okul\Okul.DAL\bin\Debug\net5.0\ref\Okul.DAL.dll
+F:\github\Lesson\Week_14\Okul\Okul.DAL\bin\Debug\net5.0\Okul.DAL.pdb
+F:\github\Lesson\Week_14\Okul\Okul.DAL\obj\Debug\net5.0\Okul.DAL.csproj.AssemblyReference.cache
+F:\github\Lesson\Week_14\Okul\Okul.DAL\obj\Debug\net5.0\Okul.DAL.GeneratedMSBuildEditorConfig.editorconfig
+F:\github\Lesson\Week_14\Okul\Okul.DAL\obj\Debug\net5.0\Okul.DAL.AssemblyInfoInputs.cache
+F:\github\Lesson\Week_14\Okul\Okul.DAL\obj\Debug\net5.0\Okul.DAL.AssemblyInfo.cs
+F:\github\Lesson\Week_14\Okul\Okul.DAL\obj\Debug\net5.0\Okul.DAL.csproj.CoreCompileInputs.cache
+F:\github\Lesson\Week_14\Okul\Okul.DAL\obj\Debug\net5.0\Okul.DAL.dll
+F:\github\Lesson\Week_14\Okul\Okul.DAL\obj\Debug\net5.0\ref\Okul.DAL.dll
+F:\github\Lesson\Week_14\Okul\Okul.DAL\obj\Debug\net5.0\Okul.DAL.pdb
+F:\github\Lesson\Week_14\Okul\Okul.DAL\obj\Debug\net5.0\Okul.DAL.genruntimeconfig.cache
