@@ -19,8 +19,13 @@ namespace Okul.DAL.Concrete
         public DbSet<Student> Students { get; set; }
         public DbSet<StudentLesson> StudentLessons { get; set; }
 
-        
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            optionsBuilder.UseSqlServer("Server=DESKTOP-CKAIKM6; database=LessonRecord; Trusted_Connection=True;");
+        }
+
     }
+    
     
     
 }

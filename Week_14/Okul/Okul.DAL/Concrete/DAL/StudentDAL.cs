@@ -1,4 +1,5 @@
-﻿using Okul.DAL.Abstract;
+﻿using Microsoft.EntityFrameworkCore;
+using Okul.DAL.Abstract;
 using Okul.DAL.Entities;
 using System;
 using System.Collections.Generic;
@@ -18,8 +19,18 @@ namespace Okul.DAL.Concrete.DAL
         {
             get { return _context as OkulDbContext; }
         }
-
-        public List<Student> GetPopularStudens()
+        public Student GetByIdwithLessons(int id)
+        {
+ 
+                return Context.Students
+                    .Where(x => x.StudentId == id)
+                    .Include(x => x.StudentLessons)
+                    .ThenInclude(x => x.Lesson)
+                    .FirstOrDefault();
+                    
+            
+        }
+        public void GetWithDepartmen()
         {
             throw new NotImplementedException();
         }

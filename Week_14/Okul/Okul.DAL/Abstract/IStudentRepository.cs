@@ -9,6 +9,7 @@ namespace Okul.DAL.Abstract
 {
     public interface IStudentRepository : IRepository<Student>
     {
-        List<Student> GetPopularStudens();
+        public void GetWithDepartmen();
+        public Student GetByIdwithLessons(int id);
     }
 }

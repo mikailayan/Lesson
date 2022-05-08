@@ -27,7 +27,7 @@ namespace Okul.WebUI
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<OkulDbContext>(option => option.UseSqlServer(Configuration.GetConnectionString("OkulConn")));
+            //services.AddDbContext<OkulDbContext>(option => option.UseSqlServer(Configuration.GetConnectionString("OkulConn")));
             services.AddScoped<IDepartmenRepository, DepartmenDAL>();
             services.AddScoped<ILessonRepository, LessonDAL>();
             services.AddScoped<IStudentRepository, StudentDAL>();

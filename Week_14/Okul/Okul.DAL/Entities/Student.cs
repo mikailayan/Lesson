@@ -13,9 +13,7 @@ namespace Okul.DAL.Entities
         public string StudentSurName { get; set; }
         public DateTime StudentDateOfBirth { get; set; }
         public DateTime StudentDateOfRegistration { get; set; }
-        public int StudentSemester { get; set; }
-
-
+        public sbyte StudentSemester { get; set; }
         public int DepartmenId { get; set; }
         public Departmen Departmen  { get; set; }
         public List<StudentLesson> StudentLessons { get; set; }

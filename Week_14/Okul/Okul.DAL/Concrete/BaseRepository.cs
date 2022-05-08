@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Okul.DAL.Concrete
 {
-    public class BaseRepository<T> : IRepository<T> where T:class 
+    public class BaseRepository<T> : IRepository<T> where T:class,new()
     {
         protected readonly DbContext _context;
         public BaseRepository(DbContext context)

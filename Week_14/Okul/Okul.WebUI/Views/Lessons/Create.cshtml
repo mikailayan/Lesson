@@ -1,0 +1,49 @@
+﻿@model Okul.DAL.Entities.Lesson
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Create</h1>
+
+<h4>Lesson</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="LessonName" class="control-label"></label>
+                <input asp-for="LessonName" class="form-control" />
+                <span asp-validation-for="LessonName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LessonTeacher" class="control-label"></label>
+                <input asp-for="LessonTeacher" class="form-control" />
+                <span asp-validation-for="LessonTeacher" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LessonCredit" class="control-label"></label>
+                <input asp-for="LessonCredit" class="form-control" />
+                <span asp-validation-for="LessonCredit" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LessonSemester" class="control-label"></label>
+                <input asp-for="LessonSemester" class="form-control" />
+                <span asp-validation-for="LessonSemester" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
