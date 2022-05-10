@@ -403,6 +403,20 @@
           "lib/netcoreapp2.1/_._": {}
         }
       },
+      "MiniShopApp.Business/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "MiniShopApp.Data": "1.0.0",
+          "MiniShopApp.Entity": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/MiniShopApp.Business.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MiniShopApp.Business.dll": {}
+        }
+      },
       "MiniShopApp.Data/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
@@ -1126,6 +1140,11 @@
         "version.txt"
       ]
     },
+    "MiniShopApp.Business/1.0.0": {
+      "type": "project",
+      "path": "../MiniShopApp.Business/MiniShopApp.Business.csproj",
+      "msbuildProject": "../MiniShopApp.Business/MiniShopApp.Business.csproj"
+    },
     "MiniShopApp.Data/1.0.0": {
       "type": "project",
       "path": "../MiniShopApp.Data/MiniShopApp.Data.csproj",
@@ -1143,6 +1162,7 @@
       "Microsoft.EntityFrameworkCore.Design >= 5.0.16",
       "Microsoft.EntityFrameworkCore.Sqlite >= 5.0.16",
       "Microsoft.EntityFrameworkCore.Tools >= 5.0.16",
+      "MiniShopApp.Business >= 1.0.0",
       "MiniShopApp.Data >= 1.0.0"
     ]
   },
@@ -1181,6 +1201,9 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
+            "F:\\github\\Lesson\\Week_14\\MiniShopApp\\MiniShopApp.Business\\MiniShopApp.Business.csproj": {
+              "projectPath": "F:\\github\\Lesson\\Week_14\\MiniShopApp\\MiniShopApp.Business\\MiniShopApp.Business.csproj"
+            },
             "F:\\github\\Lesson\\Week_14\\MiniShopApp\\MiniShopApp.Data\\MiniShopApp.Data.csproj": {
               "projectPath": "F:\\github\\Lesson\\Week_14\\MiniShopApp\\MiniShopApp.Data\\MiniShopApp.Data.csproj"
             }
