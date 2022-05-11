@@ -14,20 +14,12 @@
         <div class="row">
             @foreach (var Product in Model)
             {
-                //Daha sonra Buraya yazağımız kodları PARTIAL olarak tasarlayacağız.
-                <div class="col-md-3">
-                    <div class="card mb-2">
-                        <img src="~/img/@Product.ImageUrl" />
-                        <div class="card-body">
-                            <h5 class="card-title text-center">@Product.Name</h5>
-                            <small class="text-muted">@Product.Price</small>
-                            <div class="card-footer text-center bg-white">
-                                <a href="#" class="btn btn-sm btn-primary">Detail</a>
-                                <a href="#" class="btn btn-sm btn-success">Card</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
+            <div class="col-md-3">
+                @await Html.PartialAsync("_Product", Product);
+                @*bunu tag helperla da yapabiliriz*@
+                @*<partial name="_Product" model="product" />*@ @*böyle de yazabilirdik*@
+            </div>
             }
         </div>
     </div>

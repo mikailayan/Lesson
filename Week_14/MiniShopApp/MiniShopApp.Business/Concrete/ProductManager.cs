@@ -39,6 +39,11 @@ namespace MiniShopApp.Business.Concrete
             throw new NotImplementedException();
         }
 
+        public List<Product> GetProductsByCategory(string name)
+        {
+            return _productRepository.GetProductsByCategory(name);
+        }
+
         public void Update(Product entity)
         {
             throw new NotImplementedException();

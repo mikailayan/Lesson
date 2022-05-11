@@ -71,3 +71,5 @@ F:\github\Lesson\Week_14\MiniShopApp\MiniShopApp.WebUI\bin\Debug\net5.0\MiniShop
 F:\github\Lesson\Week_14\MiniShopApp\MiniShopApp.WebUI\bin\Debug\net5.0\MiniShopApp.Business.dll
 F:\github\Lesson\Week_14\MiniShopApp\MiniShopApp.WebUI\bin\Debug\net5.0\MiniShopApp.Business.pdb
 F:\github\Lesson\Week_14\MiniShopApp\MiniShopApp.WebUI\obj\Debug\net5.0\Razor\Views\Shared\Components\Categories\Default.cshtml.g.cs
+F:\github\Lesson\Week_14\MiniShopApp\MiniShopApp.WebUI\obj\Debug\net5.0\Razor\Views\Shared\_Product.cshtml.g.cs
+F:\github\Lesson\Week_14\MiniShopApp\MiniShopApp.WebUI\obj\Debug\net5.0\Razor\Views\MiniShop\List.cshtml.g.cs
