@@ -26,8 +26,15 @@ using MiniShopApp.Entity;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 3 "F:\github\Lesson\Week_14\MiniShopApp\MiniShopApp.WebUI\Views\_ViewImports.cshtml"
+using MiniShopApp.WebUI.Models;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"03d7ba25711fb52785b3097b51d0cc8b77c945bf", @"/Views/Shared/Components/Categories/Default.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"442965d8d34ced645b8ed9103ed55af0d8718c9a", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"efca7abb504071629bf02662fe30c61d24a17285", @"/Views/_ViewImports.cshtml")]
     public class Views_Shared_Components_Categories_Default : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<List<Category>>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("asp-controller", "MiniShop", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -66,7 +73,7 @@ using MiniShopApp.Entity;
 #line hidden
 #nullable disable
             WriteLiteral("        ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "03d7ba25711fb52785b3097b51d0cc8b77c945bf4206", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "03d7ba25711fb52785b3097b51d0cc8b77c945bf4400", async() => {
 #nullable restore
 #line 10 "F:\github\Lesson\Week_14\MiniShopApp\MiniShopApp.WebUI\Views\Shared\Components\Categories\Default.cshtml"
                                                                                                         Write(item.Name);

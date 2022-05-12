@@ -11,7 +11,32 @@ namespace MiniShopApp.Data.Concrete.EfCore
 {
     public class EFCoreProductRepository : EfCoreGenericRepository<Product, MiniShopContext>, IProductRepository
     {
-        //Burada görünmeselerde EfCoreGenericRepository classımızdaki tüm metotlar var.
+        public List<Product> GetHomePageProducts()
+        {
+            using (var context = new MiniShopContext())
+            {
+                return context
+                    .Products
+                    .Where(i => i.IsApproved && i.IsHome)
+                    .ToList();
+            }
+        }
+
+        public Product GetProductDetails(string url)
+        {
+            using (var context = new MiniShopContext())
+            {
+                return context
+                    .Products
+                    .Where(i => i.Url == url)
+                    .Include(i => i.ProductCategories)
+                    .ThenInclude(i => i.Category)
+                    .FirstOrDefault();
+                //Buraya daha sonra ilgili ürünün kategori adını da getirecek eklemeler yapacağız
+            }
+        }
+
+        //Burada görünmeseler de EfCoreGenericRepository classımızdaki tüm metotlar var.
         //Temel CRUD işlemlerini yapan 5 metot.
         public List<Product> GetProductsByCategory(string name)
         {
@@ -29,6 +54,19 @@ namespace MiniShopApp.Data.Concrete.EfCore
                         .Where(i => i.ProductCategories.Any(a => a.Category.Url == name));
                 }
                 return products.ToList();
+            }
+        }
+
+        public List<Product> GetSearchResult(string searchString)
+        {
+            searchString = searchString.ToLower();
+            using (var context = new MiniShopContext())
+            {
+                var products = context
+                    .Products
+                    .Where(i => i.IsApproved && (i.Name.ToLower().Contains(searchString) || i.Description.ToLower().Contains(searchString)))
+                    .ToList();
+                return products;
             }
         }
     }
