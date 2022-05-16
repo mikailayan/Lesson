@@ -75,3 +75,4 @@ F:\github\Lesson\Week_14\MiniShopApp\MiniShopApp.WebUI\obj\Debug\net5.0\Razor\Vi
 F:\github\Lesson\Week_14\MiniShopApp\MiniShopApp.WebUI\obj\Debug\net5.0\Razor\Views\MiniShop\List.cshtml.g.cs
 F:\github\Lesson\Week_14\MiniShopApp\MiniShopApp.WebUI\obj\Debug\net5.0\Razor\Views\MiniShop\Details.cshtml.g.cs
 F:\github\Lesson\Week_14\MiniShopApp\MiniShopApp.WebUI\obj\Debug\net5.0\Razor\Views\MiniShop\Search.cshtml.g.cs
+F:\github\Lesson\Week_14\MiniShopApp\MiniShopApp.WebUI\obj\Debug\net5.0\Razor\Views\Shared\_NoProduct.cshtml.g.cs
