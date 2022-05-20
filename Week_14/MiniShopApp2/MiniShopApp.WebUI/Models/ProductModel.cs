@@ -10,16 +10,15 @@ namespace MiniShopApp.WebUI.Models
     public class ProductModel
     {
         public int ProductId { get; set; }
-        //[Required(ErrorMessage ="Ürün ismi zorunludur!")]
-        //[StringLength(50, MinimumLength =5, ErrorMessage ="Ürün ismi 1-50 karakter uzunluğunda olmalıdır!" )]
+        [Required(ErrorMessage = "Ürün ismi zorunludur!")]
+        [StringLength(50, MinimumLength = 5, ErrorMessage = "Ürün ismi 1-50 karakter uzunluğunda olmalıdır!")]
         public string Name { get; set; }
-        //[Required(ErrorMessage ="Lütfen fiyat bilgisni giriniz")]
-        //[Range(1,50000, ErrorMessage ="Lütfen 1-50000 arasında bir değer giriniz!")]
+        [Required(ErrorMessage = "Lütfen fiyat bilgisni giriniz")]
+        [Range(1, 50000, ErrorMessage = "Lütfen 1-50000 arasında bir değer giriniz!")]
         public decimal? Price { get; set; }
-        //[Required(ErrorMessage = "Açıklama zorunludur!")]
-        //[StringLength(500, MinimumLength = 20, ErrorMessage = "Açıklama 20-500 karakter uzunluğunda olmalıdır!")]
+        [Required(ErrorMessage = "Açıklama zorunludur!")]
+        [StringLength(500, MinimumLength = 20, ErrorMessage = "Açıklama 20-500 karakter uzunluğunda olmalıdır!")]
         public string Description { get; set; }
-        //[Required(ErrorMessage = "Lütfen resim yolunu giriniz!")]
         public string ImageUrl { get; set; }
         public string Url { get; set; }
         public bool IsApproved { get; set; }
