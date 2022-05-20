@@ -79,13 +79,16 @@ namespace MiniShopApp.WebUI
                     pattern:"products/{category?}",
                     defaults: new {controller="MiniShop", action = "List"}
                     );
-
                 endpoints.MapControllerRoute(
                     name: "productdetails",
                     pattern: "{url}",
                     defaults: new { controller = "MiniShop", action = "Details" }
                     );
-
+                endpoints.MapControllerRoute(
+                    name: "adminproductedit",
+                    pattern: "admin/products/{id?}",
+                    defaults: new { controller = "Admin", action = "ProductEdit" }
+                    );
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");

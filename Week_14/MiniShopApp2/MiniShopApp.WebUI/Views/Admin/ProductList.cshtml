@@ -30,11 +30,26 @@
                                 @if (product.IsHome)
                                 {
                                     <i class="fa-solid fa-circle-check text-success"></i>
+
+
                                 }
                                 else
                                 {
                                     <i class="fa-solid fa-circle-xmark text-danger"></i>
                                 }
+                                <form action="/admin/AktifEt" method="post" class="d-inline">
+                                    <input type="hidden" name="Id" value="@product.ProductId" />
+                                    <button type="submit" class="btn btn-sm btn-success">AktifEt</button>
+                                </form>
+                                <form action="/admin/PasifEt" method="post" class="d-inline">
+                                    <input type="hidden" name="Id" value="@product.ProductId" />
+                                    <button type="submit" class="btn btn-sm btn-danger">PasifEt</button>
+                                </form>
+                                <div>
+                                    <a href="#">content</a>
+                                </div>
+                                <input type="checkbox" name="Id" value="" />
+
                             </td>
                             <td>
                                 @if (product.IsApproved)
@@ -49,7 +64,7 @@
                             <td >@product.Price</td>
                             <td>
                                 <a href="/admin/Products/@product.ProductId" class="btn btn-sm btn-primary mr-2">Edit</a>
-                                <form action="/" method="post" class="d-inline">
+                                <form action="/admin/ProductDelete" method="post" class="d-inline">
                                     <input type="hidden" name="productId" value="@product.ProductId" />
                                     <button type="submit" class="btn btn-sm btn-danger">Delete</button>
                                 </form>

@@ -156,3 +156,4 @@ F:\github\Lesson\Week_14\MiniShopApp2\MiniShopApp.WebUI\obj\Debug\net5.0\MiniSho
 F:\github\Lesson\Week_14\MiniShopApp2\MiniShopApp.WebUI\obj\Debug\net5.0\MiniShopApp.WebUI.genruntimeconfig.cache
 F:\github\Lesson\Week_14\MiniShopApp2\MiniShopApp.WebUI\obj\Debug\net5.0\Razor\Views\Admin\ProductList.cshtml.g.cs
 F:\github\Lesson\Week_14\MiniShopApp2\MiniShopApp.WebUI\obj\Debug\net5.0\Razor\Views\Admin\ProductCreate.cshtml.g.cs
+F:\github\Lesson\Week_14\MiniShopApp2\MiniShopApp.WebUI\obj\Debug\net5.0\Razor\Views\Admin\ProductEdit.cshtml.g.cs

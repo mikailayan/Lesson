@@ -1,4 +1,4 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿    using Microsoft.EntityFrameworkCore;
 using MiniShopApp.Data.Abstract;
 using MiniShopApp.Entity;
 using System;
@@ -120,6 +120,73 @@ namespace MiniShopApp.Data.Concrete.EfCore
 
                 }).ToList();
                 context.SaveChanges();
+            }
+        }
+
+        public void Update(Product entity, int[] categoryIds)
+        {
+            using (var context = new MiniShopContext())
+            {
+                var product = context
+                     .Products
+                     .Include(i => i.ProductCategories)
+                     .FirstOrDefault(i=>i.ProductId==entity.ProductId);
+                product.Name = entity.Name;
+                product.Price = entity.Price;
+                product.Description = entity.Description;
+                product.Url = entity.Url;
+                product.ImageUrl = entity.ImageUrl;
+                product.IsApproved = entity.IsApproved;
+                product.IsHome = entity.IsHome;
+                product.ProductCategories = categoryIds
+                    .Select(catId => new ProductCategory()
+                    {
+                        ProductId = entity.ProductId,
+                        CategoryId = catId
+                    }).ToList();
+                context.SaveChanges();
+            }
+        }
+
+        public Product GetByIdWithCategories(int id)
+        {
+            using (var contex = new MiniShopContext())
+            {
+                return contex
+                    .Products
+                    .Where(i => i.ProductId == id)
+                    .Include(i => i.ProductCategories)
+                    .ThenInclude(i => i.Category)
+                    .FirstOrDefault();
+            }
+        }
+
+        public void PasifEt(int id)
+        {
+            using (var context = new MiniShopContext())
+            {
+                var product = context
+                    .Products
+                    .Where(i => i.ProductId == id)
+                    .FirstOrDefault();
+                product.IsHome = false;
+                context.Products.Update(product);
+                context.SaveChanges();
+            }
+        }
+
+        public void AktifEt(int id)
+        {
+            using (var context = new MiniShopContext())
+            {
+                var product = context
+                    .Products
+                    .Where(i => i.ProductId == id)
+                    .FirstOrDefault();
+                product.IsHome = true;
+                context.Products.Update(product);
+                context.SaveChanges();
+
             }
         }
     }

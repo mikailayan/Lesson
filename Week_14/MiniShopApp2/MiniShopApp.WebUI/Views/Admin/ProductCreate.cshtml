@@ -5,11 +5,14 @@
 <form asp-action="ProductCreate" asp-controller="Admin" method="post">
     <div class="row">
         <div class="col-md-8">
-            @*Product bilgileri için*@
+            <div asp-validation-summary="All" class="text-danger">
+
+            </div>
             <div class="form-group row mb-2">
                 <label class="col-form-label col-sm-3">Name:</label>
                 <div class="col-sm-9">
                     <input type="text" asp-for="Name" />
+                    <span asp-validation-for="Name" class="text-danger"></span> @*Name alanıyla ilgili validasyon işlemlerini uygular(span her zaman boş olduğu için span kullanıyoruz.)*@
                 </div>
             </div>
 
@@ -17,6 +20,7 @@
                 <label class="col-form-label col-sm-3">URL:</label>
                 <div class="col-sm-9">
                     <input type="text" asp-for="Url" />
+
                 </div>
             </div>
 
@@ -24,18 +28,21 @@
                 <label class="col-form-label col-sm-3">Description:</label>
                 <div class="col-sm-9">
                     <input type="text" asp-for="Description" />
+                    <span asp-validation-for="Description" class="text-danger"></span>
                 </div>
             </div>
             <div class="form-group row mb-2">
                 <label class="col-form-label col-sm-3">ImageUrl:</label>
                 <div class="col-sm-9">
                     <input type="text" asp-for="ImageUrl" />
+                    <span asp-validation-for="ImageUrl" class="text-danger"></span>
                 </div>
             </div>
             <div class="form-group row mb-2">
                 <label class="col-form-label col-sm-3">Price:</label>
                 <div class="col-sm-9">
                     <input type="text" asp-for="Price" />
+                    <span asp-validation-for="Price" class="text-danger"></span>
                 </div>
             </div>
             <div class="form-group row mb-2">
@@ -46,6 +53,16 @@
         </div>
         <div class="col-md-4">
             @*Categorys, IsHome IsApporoved*@
+            @if (Model.SelectedCategories!=null)
+            {
+                @for (int i = 0; i < Model.SelectedCategories.Count; i++)
+                {
+                    <input type="hidden" name="SelectedCategories[@i].CategoryId" value="@Model.SelectedCategories[i].CategoryId" />
+                    <input type="hidden" name="SelectedCategories[@i].Name" value="@Model.SelectedCategories[i].Name" />
+
+                }
+
+            }
             @foreach (var item in (List<Category>)ViewBag.Categories)
             {
                 <div class="form-check">

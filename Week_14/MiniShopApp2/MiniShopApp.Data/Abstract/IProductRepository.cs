@@ -16,5 +16,9 @@ namespace MiniShopApp.Data.Abstract
         List<Product> GetSearchResult(string searchString);
         int GetCountByCategory(string category);
         void Create(Product entity, int[] categoryIds);
+        void Update(Product entity, int[] categoryIds);
+        Product GetByIdWithCategories(int id);
+        void PasifEt(int id);
+        void AktifEt(int id);
     }
 }

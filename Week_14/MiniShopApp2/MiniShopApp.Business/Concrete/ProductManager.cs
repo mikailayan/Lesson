@@ -9,26 +9,38 @@ using System.Threading.Tasks;
 
 namespace MiniShopApp.Business.Concrete
 {
-    public class ProductManager : IProductService
+    public class ProductManager : IProductService , IValidator<Product>
     {
         private IProductRepository _productRepository;
         public ProductManager(IProductRepository productRepository)
         {
             _productRepository = productRepository;
         }
+
+
+        public void AktifEt(int id)
+        {
+            _productRepository.AktifEt(id);
+        }
+
         public void Create(Product entity)
         {
             throw new NotImplementedException();
         }
 
-        public void Create(Product entity, int[] categoryIds)
+        public bool Create(Product entity, int[] categoryIds)
         {
-            _productRepository.Create(entity, categoryIds);
+            if (Validation(entity))
+            {
+                _productRepository.Create(entity, categoryIds);
+                return true;
+            }
+            return false;
         }
 
         public void Delete(Product entity)
         {
-            throw new NotImplementedException();
+            _productRepository.Delete(entity);
         }
 
         public List<Product> GetAll()
@@ -42,7 +54,12 @@ namespace MiniShopApp.Business.Concrete
 
         public Product GetById(int id)
         {
-            throw new NotImplementedException();
+           return _productRepository.GetById(id);
+        }
+
+        public Product GetByIdWithCategories(int id)
+        {
+            return _productRepository.GetByIdWithCategories(id);
         }
 
         public int GetCountByCategory(string category)
@@ -70,9 +87,37 @@ namespace MiniShopApp.Business.Concrete
             return _productRepository.GetSearchResult(searchString);
         }
 
+        public void PasifEt(int id)
+        {
+            _productRepository.PasifEt(id);
+        }
+
         public void Update(Product entity)
         {
             throw new NotImplementedException();
+        }
+
+        public void Update(Product entity, int[] categoryIds)
+        {
+            _productRepository.Update(entity, categoryIds);
+
+        }
+        public string ErrorMessage { get; set; }
+
+        public bool Validation(Product entity)
+        {
+            var isValid = true;
+            if (string.IsNullOrEmpty(entity.Name))
+            {
+                ErrorMessage += $"Ürün adı boş geçilemez.\n";
+                isValid = false;
+            }
+            if (entity.Price<=0)
+            {
+                ErrorMessage += $"Ürün Fiyatı 0'dan büyük olmalıdır.\n";
+                isValid = false;
+            }
+            return isValid;
         }
     }
 }
