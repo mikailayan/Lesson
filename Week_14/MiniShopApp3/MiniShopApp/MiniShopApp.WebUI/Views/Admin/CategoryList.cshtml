@@ -1,0 +1,44 @@
+﻿@model List<Category>
+
+<div class="row">
+    <div class="col-md-12">
+        <h6 class="display-4">Admin Category Managament</h6>
+        <hr />
+        <a href="/admin/category/create" class="btn btn-sm btn-primary">Create Category</a>
+        <table class="table table-bordered mt-2">
+            <thead>
+                <tr>
+                    <th width="30">ID</th>
+                    <th width="100">Name</th>
+                    <th>Description</th>
+                    <th width="30">Url</th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (Model.Count > 0)
+                {
+                    @foreach (var category in Model)
+                    {
+                        <tr>
+                            <td>@category.CategoryId</td>
+                            <td>@category.Name</td>
+                            <td>@category.Description</td>
+                            <td>
+                                <a href="/admin/category/@category.CategoryId" class="btn btn-sm btn-primary mr-1">Edit</a>
+                                <form action="/Admin/ProductDelete" method="post" class="d-inline">
+                                    <input type="hidden" name="productId" value="@category.CategoryId" />
+                                    <button type="submit" class="btn btn-sm btn-danger">Delete</button>
+                                </form>
+                            </td>
+                        </tr>
+                    }
+                }
+                else
+                {
+                    //ÜRün olmadığında yapılacak işlem
+                }
+
+            </tbody>
+        </table>
+    </div>
+</div>
