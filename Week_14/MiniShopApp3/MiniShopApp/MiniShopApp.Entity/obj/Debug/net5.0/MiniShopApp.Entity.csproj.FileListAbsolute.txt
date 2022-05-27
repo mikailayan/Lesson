@@ -14,7 +14,6 @@ F:\github\Lesson\Week_14\MiniShopApp3\MiniShopApp\MiniShopApp.Entity\bin\Debug\n
 F:\github\Lesson\Week_14\MiniShopApp3\MiniShopApp\MiniShopApp.Entity\bin\Debug\net5.0\MiniShopApp.Entity.dll
 F:\github\Lesson\Week_14\MiniShopApp3\MiniShopApp\MiniShopApp.Entity\bin\Debug\net5.0\ref\MiniShopApp.Entity.dll
 F:\github\Lesson\Week_14\MiniShopApp3\MiniShopApp\MiniShopApp.Entity\bin\Debug\net5.0\MiniShopApp.Entity.pdb
-F:\github\Lesson\Week_14\MiniShopApp3\MiniShopApp\MiniShopApp.Entity\obj\Debug\net5.0\MiniShopApp.Entity.csproj.AssemblyReference.cache
 F:\github\Lesson\Week_14\MiniShopApp3\MiniShopApp\MiniShopApp.Entity\obj\Debug\net5.0\MiniShopApp.Entity.GeneratedMSBuildEditorConfig.editorconfig
 F:\github\Lesson\Week_14\MiniShopApp3\MiniShopApp\MiniShopApp.Entity\obj\Debug\net5.0\MiniShopApp.Entity.AssemblyInfoInputs.cache
 F:\github\Lesson\Week_14\MiniShopApp3\MiniShopApp\MiniShopApp.Entity\obj\Debug\net5.0\MiniShopApp.Entity.AssemblyInfo.cs
@@ -22,3 +21,4 @@ F:\github\Lesson\Week_14\MiniShopApp3\MiniShopApp\MiniShopApp.Entity\obj\Debug\n
 F:\github\Lesson\Week_14\MiniShopApp3\MiniShopApp\MiniShopApp.Entity\obj\Debug\net5.0\MiniShopApp.Entity.dll
 F:\github\Lesson\Week_14\MiniShopApp3\MiniShopApp\MiniShopApp.Entity\obj\Debug\net5.0\ref\MiniShopApp.Entity.dll
 F:\github\Lesson\Week_14\MiniShopApp3\MiniShopApp\MiniShopApp.Entity\obj\Debug\net5.0\MiniShopApp.Entity.pdb
+F:\github\Lesson\Week_14\MiniShopApp3\MiniShopApp\MiniShopApp.Entity\obj\Debug\net5.0\MiniShopApp.Entity.csproj.AssemblyReference.cache

@@ -10,6 +10,7 @@ using MiniShopApp.Business.Abstract;
 using MiniShopApp.Business.Concrete;
 using MiniShopApp.Data.Abstract;
 using MiniShopApp.Data.Concrete.EfCore;
+using MiniShopApp.WebUI.EmailServices;
 using MiniShopApp.WebUI.Identity;
 using System;
 using System.Collections.Generic;
@@ -32,7 +33,34 @@ namespace MiniShopApp.WebUI
         {
             services.AddDbContext<ApplicationContext>(options => options.UseSqlite("Data Source=MiniShopAppDb"));
             services.AddIdentity<User, IdentityRole>().AddEntityFrameworkStores<ApplicationContext>().AddDefaultTokenProviders();
+
+            services.Configure<IdentityOptions>(option => {
+                //Pasword
+                option.Password.RequireDigit = true; //þifremin içinde rakam bulunsun
+                option.Password.RequireLowercase = true; //þifremde küçük harf bulunmalý
+                option.Password.RequireUppercase = true; //büyükharf bulunmalý
+                option.Password.RequiredLength = 6; // en az 6 karakter olmalý
+
+                //Lockout kullanýcýnýn üst üste sürekli olarka giriþ yapmasýný engelliyoruz
+                option.Lockout.MaxFailedAccessAttempts = 3; //3 kere deneyebilirsin fazla denersen hesap kitlenir.
+                option.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(10); //3 kere üst üste hatalý girerse hesabý 10 dakika kitlenecek
+                option.Lockout.AllowedForNewUsers = true;
+
+                //User 
+                option.User.RequireUniqueEmail = true; //bir kiþinin mail adresi benzersiz olmalý
+
+                //SignIn
+                option.SignIn.RequireConfirmedEmail = true; 
+
+            });
             //Burada Identity ile ilgili çeþitli seçenekleri tanýmlayacaðýz.
+            services.AddScoped<IEmailSender, SmtpEmailSender>(i => new SmtpEmailSender(
+                Configuration["EmailSender:Host"],
+                Configuration.GetValue<int>("EmailSender:Port"),
+                Configuration.GetValue<bool>("EmailSender:EnableSSL"),
+                Configuration["EmailSender:UserName"],
+                Configuration["EmailSender:Password"]
+                ));
 
             services.AddScoped<IProductRepository, EfCoreProductRepository>();
             services.AddScoped<ICategoryRepository, EfCoreCategoryRepository>();
@@ -59,7 +87,7 @@ namespace MiniShopApp.WebUI
             }
             app.UseHttpsRedirection();
             app.UseStaticFiles();
-
+            app.UseAuthentication();
             app.UseRouting();
 
             app.UseAuthorization();

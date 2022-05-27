@@ -170,3 +170,4 @@ F:\github\Lesson\Week_14\MiniShopApp3\MiniShopApp\MiniShopApp.WebUI\bin\Debug\ne
 F:\github\Lesson\Week_14\MiniShopApp3\MiniShopApp\MiniShopApp.WebUI\bin\Debug\net5.0\Microsoft.Extensions.Identity.Core.dll
 F:\github\Lesson\Week_14\MiniShopApp3\MiniShopApp\MiniShopApp.WebUI\bin\Debug\net5.0\Microsoft.Extensions.Identity.Stores.dll
 F:\github\Lesson\Week_14\MiniShopApp3\MiniShopApp\MiniShopApp.WebUI\obj\Debug\net5.0\Razor\Views\Account\Login.cshtml.g.cs
+F:\github\Lesson\Week_14\MiniShopApp3\MiniShopApp\MiniShopApp.WebUI\obj\Debug\net5.0\Razor\Views\Account\Register.cshtml.g.cs
