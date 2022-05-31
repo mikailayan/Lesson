@@ -170,3 +170,6 @@ F:\github\Lesson\Week_14\MiniShopApp4\MiniShopApp\MiniShopApp.WebUI\obj\Debug\ne
 F:\github\Lesson\Week_14\MiniShopApp4\MiniShopApp\MiniShopApp.WebUI\obj\Debug\net5.0\ref\MiniShopApp.WebUI.dll
 F:\github\Lesson\Week_14\MiniShopApp4\MiniShopApp\MiniShopApp.WebUI\obj\Debug\net5.0\MiniShopApp.WebUI.pdb
 F:\github\Lesson\Week_14\MiniShopApp4\MiniShopApp\MiniShopApp.WebUI\obj\Debug\net5.0\MiniShopApp.WebUI.genruntimeconfig.cache
+F:\github\Lesson\Week_14\MiniShopApp4\MiniShopApp\MiniShopApp.WebUI\obj\Debug\net5.0\Razor\Views\Account\ForgotPassword.cshtml.g.cs
+F:\github\Lesson\Week_14\MiniShopApp4\MiniShopApp\MiniShopApp.WebUI\obj\Debug\net5.0\Razor\Views\Account\ResetPassword.cshtml.g.cs
+F:\github\Lesson\Week_14\MiniShopApp4\MiniShopApp\MiniShopApp.WebUI\obj\Debug\net5.0\Razor\Views\Admin\RoleCreate.cshtml.g.cs
