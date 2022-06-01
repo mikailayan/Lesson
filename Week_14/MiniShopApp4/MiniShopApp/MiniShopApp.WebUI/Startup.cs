@@ -65,9 +65,9 @@ namespace MiniShopApp.WebUI
                 options.SlidingExpiration = true;
                 options.Cookie = new CookieBuilder()
                 {
-                    HttpOnly = true,
+                    HttpOnly = true, //kötü amaçlý kiþiler tarayýcý üzerinde kendi js kodlarýný çalýþtýrabilirler cookie'nin okunmasý engellenir session cookie ataðýndan korunmuþ olur 
                     Name="MiniShopApp.Security.Cookie",
-                    SameSite = SameSiteMode.Strict
+                    SameSite = SameSiteMode.Strict //sadece kendi bilgisayarým güvenlik
                 };
             });
 
