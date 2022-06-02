@@ -47,8 +47,15 @@ using Microsoft.AspNetCore.Identity;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 7 "F:\github\Lesson\Week_14\MiniShopApp6\MiniShopApp\MiniShopApp.WebUI\Views\_ViewImports.cshtml"
+using MiniShopApp.WebUI.Identity;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"12aa050b8694a15da460157ade3fcfb8f018dbc6", @"/Views/Account/AccessDenied.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"984a2a1d513639599f1216b30efeea103ca5383e", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"f4653334ee460bb8e55f2ae57413a710d32961ff", @"/Views/_ViewImports.cshtml")]
     public class Views_Account_AccessDenied : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         #pragma warning disable 1998

@@ -511,6 +511,20 @@
           "bin/placeholder/MiniShopApp.Business.dll": {}
         }
       },
+      "MiniShopApp.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Microsoft.AspNetCore.Http.Features": "5.0.17",
+          "Newtonsoft.Json": "13.0.1"
+        },
+        "compile": {
+          "bin/placeholder/MiniShopApp.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MiniShopApp.Core.dll": {}
+        }
+      },
       "MiniShopApp.Data/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
@@ -1404,6 +1418,11 @@
       "path": "../MiniShopApp.Business/MiniShopApp.Business.csproj",
       "msbuildProject": "../MiniShopApp.Business/MiniShopApp.Business.csproj"
     },
+    "MiniShopApp.Core/1.0.0": {
+      "type": "project",
+      "path": "../MiniShopApp.Core/MiniShopApp.Core.csproj",
+      "msbuildProject": "../MiniShopApp.Core/MiniShopApp.Core.csproj"
+    },
     "MiniShopApp.Data/1.0.0": {
       "type": "project",
       "path": "../MiniShopApp.Data/MiniShopApp.Data.csproj",
@@ -1422,6 +1441,7 @@
       "Microsoft.EntityFrameworkCore.Sqlite >= 5.0.16",
       "Microsoft.EntityFrameworkCore.Tools >= 5.0.16",
       "MiniShopApp.Business >= 1.0.0",
+      "MiniShopApp.Core >= 1.0.0",
       "MiniShopApp.Data >= 1.0.0",
       "Newtonsoft.Json >= 13.0.1"
     ]
@@ -1463,6 +1483,9 @@
           "projectReferences": {
             "F:\\github\\Lesson\\Week_14\\MiniShopApp6\\MiniShopApp\\MiniShopApp.Business\\MiniShopApp.Business.csproj": {
               "projectPath": "F:\\github\\Lesson\\Week_14\\MiniShopApp6\\MiniShopApp\\MiniShopApp.Business\\MiniShopApp.Business.csproj"
+            },
+            "F:\\github\\Lesson\\Week_14\\MiniShopApp6\\MiniShopApp\\MiniShopApp.Core\\MiniShopApp.Core.csproj": {
+              "projectPath": "F:\\github\\Lesson\\Week_14\\MiniShopApp6\\MiniShopApp\\MiniShopApp.Core\\MiniShopApp.Core.csproj"
             },
             "F:\\github\\Lesson\\Week_14\\MiniShopApp6\\MiniShopApp\\MiniShopApp.Data\\MiniShopApp.Data.csproj": {
               "projectPath": "F:\\github\\Lesson\\Week_14\\MiniShopApp6\\MiniShopApp\\MiniShopApp.Data\\MiniShopApp.Data.csproj"

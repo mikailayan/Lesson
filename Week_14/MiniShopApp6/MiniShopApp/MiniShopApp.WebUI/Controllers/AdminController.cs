@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using MiniShopApp.Business.Abstract;
 using MiniShopApp.Business.Concrete;
+using MiniShopApp.Core;
 using MiniShopApp.Entity;
 using MiniShopApp.WebUI.Identity;
 using MiniShopApp.WebUI.Models;
@@ -32,7 +33,30 @@ namespace MiniShopApp.WebUI.Controllers
             _roleManager = roleManager;
             _userManager = userManager;
         }
-
+        public IActionResult UserList()
+        {
+            return View(_userManager.Users);
+        }
+        public async Task<IActionResult> UserEdit(string id)
+        {
+            var user = await _userManager.FindByIdAsync(id);
+            if (user!=null)
+            {
+                var selectedRoles = await _userManager.GetRolesAsync(user);
+                var role =  _roleManager.Roles.Select(i => i.Name);
+                ViewBag.Roles = role;
+                return View(new UserDetailsModel() {
+                UserId=user.Id,
+                FirstName = user.FirstName,
+                LastName = user.LastName,
+                UserName = user.UserName,
+                Email = user.Email,
+                EmailConfirmed = user.EmailConfirmed,
+                SelectedRoles= selectedRoles
+                });
+            }
+            return Redirect("~/admin/user/list");
+        }
         public IActionResult RoleList()
         {
             return View(_roleManager.Roles);
@@ -161,7 +185,7 @@ namespace MiniShopApp.WebUI.Controllers
                 };
                 _productService.Create(product, categoryIds);
 
-                CreateMessage("Ürün eklenmiştir", "success");
+                TempData["Message"]=JobManager.CreateMessage("Ürün Ekleme","Ürün ekleme işlemi başarıyla tamamlanmıştır", "success");
                 return RedirectToAction("ProductList");
             }
             //İşler yolunda gitmediyse
@@ -231,14 +255,6 @@ namespace MiniShopApp.WebUI.Controllers
             return RedirectToAction("ProductList");
         }
 
-        private void CreateMessage(string message, string alertType)
-        {
-            var msg = new AlertMessage()
-            {
-                Message = message,
-                AlertType = alertType
-            };
-            TempData["Message"] = JsonConvert.SerializeObject(msg);
-        }
+      
     }
 }

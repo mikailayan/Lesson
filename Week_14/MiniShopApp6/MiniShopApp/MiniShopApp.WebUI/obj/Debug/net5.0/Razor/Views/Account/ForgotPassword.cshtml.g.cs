@@ -47,8 +47,15 @@ using Microsoft.AspNetCore.Identity;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 7 "F:\github\Lesson\Week_14\MiniShopApp6\MiniShopApp\MiniShopApp.WebUI\Views\_ViewImports.cshtml"
+using MiniShopApp.WebUI.Identity;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"21fc4c81920ebb8f0ba8725dceb24276cbf4d9b6", @"/Views/Account/ForgotPassword.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"984a2a1d513639599f1216b30efeea103ca5383e", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"f4653334ee460bb8e55f2ae57413a710d32961ff", @"/Views/_ViewImports.cshtml")]
     public class Views_Account_ForgotPassword : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("asp-controller", "Account", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -80,7 +87,7 @@ using Microsoft.AspNetCore.Identity;
         public async override global::System.Threading.Tasks.Task ExecuteAsync()
         {
             WriteLiteral("<h6 class=\"display-4\">Forgot Password</h6>\r\n<hr />\r\n");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "21fc4c81920ebb8f0ba8725dceb24276cbf4d9b64902", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "21fc4c81920ebb8f0ba8725dceb24276cbf4d9b65111", async() => {
                 WriteLiteral(@"
     <div class=""row"">
         <div class=""col-md-6"">

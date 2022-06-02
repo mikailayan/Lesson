@@ -38,6 +38,7 @@
           "Microsoft.EntityFrameworkCore.Sqlite": "5.0.16",
           "Microsoft.EntityFrameworkCore.Tools": "5.0.16",
           "MiniShopApp.Business": "1.0.0",
+          "MiniShopApp.Core": "1.0.0",
           "MiniShopApp.Data": "1.0.0",
           "Newtonsoft.Json": "13.0.1",
           "Microsoft.AspNetCore.Antiforgery": "5.0.0.0",
@@ -776,6 +777,18 @@
         },
         "compile": {
           "MiniShopApp.Business.dll": {}
+        }
+      },
+      "MiniShopApp.Core/1.0.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Http.Features": "5.0.17",
+          "Newtonsoft.Json": "13.0.1"
+        },
+        "runtime": {
+          "MiniShopApp.Core.dll": {}
+        },
+        "compile": {
+          "MiniShopApp.Core.dll": {}
         }
       },
       "MiniShopApp.Data/1.0.0": {
@@ -2718,6 +2731,11 @@
       "hashPath": "system.memory.4.5.3.nupkg.sha512"
     },
     "MiniShopApp.Business/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MiniShopApp.Core/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -47,8 +47,15 @@ using Microsoft.AspNetCore.Identity;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 7 "F:\github\Lesson\Week_14\MiniShopApp6\MiniShopApp\MiniShopApp.WebUI\Views\_ViewImports.cshtml"
+using MiniShopApp.WebUI.Identity;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"e4efac92b70a26e0e7a75f74940e7b925695cbcf", @"/Views/Home/Index.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"984a2a1d513639599f1216b30efeea103ca5383e", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"f4653334ee460bb8e55f2ae57413a710d32961ff", @"/Views/_ViewImports.cshtml")]
     public class Views_Home_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<List<Product>>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("action", new global::Microsoft.AspNetCore.Html.HtmlString("Search"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -95,7 +102,7 @@ using Microsoft.AspNetCore.Identity;
 #line hidden
 #nullable disable
             WriteLiteral("\r\n        <div class=\"card mt-3\">\r\n            <div class=\"card-header\">\r\n                <h5>Search</h5>\r\n            </div>\r\n            <div class=\"card-body\">\r\n                ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e4efac92b70a26e0e7a75f74940e7b925695cbcf4994", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e4efac92b70a26e0e7a75f74940e7b925695cbcf5203", async() => {
                 WriteLiteral(@"
                     <div class=""form-group"">
                         <input type=""text"" name=""q"" class=""form-control"" placeholder=""Search"" />

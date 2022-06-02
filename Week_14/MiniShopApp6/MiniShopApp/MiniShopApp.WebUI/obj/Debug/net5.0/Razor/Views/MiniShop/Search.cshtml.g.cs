@@ -47,8 +47,15 @@ using Microsoft.AspNetCore.Identity;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 7 "F:\github\Lesson\Week_14\MiniShopApp6\MiniShopApp\MiniShopApp.WebUI\Views\_ViewImports.cshtml"
+using MiniShopApp.WebUI.Identity;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"99a91c84aab4c7d7e8ea40d40f0a0295ccec9817", @"/Views/MiniShop/Search.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"984a2a1d513639599f1216b30efeea103ca5383e", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"f4653334ee460bb8e55f2ae57413a710d32961ff", @"/Views/_ViewImports.cshtml")]
     public class Views_MiniShop_Search : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<List<Product>>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("name", "_Product", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -94,7 +101,7 @@ using Microsoft.AspNetCore.Identity;
 #line hidden
 #nullable disable
             WriteLiteral("                    <div class=\"col-md-4\">\r\n                        ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("partial", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "99a91c84aab4c7d7e8ea40d40f0a0295ccec98174836", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("partial", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "99a91c84aab4c7d7e8ea40d40f0a0295ccec98175045", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_TagHelpers_PartialTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.PartialTagHelper>();

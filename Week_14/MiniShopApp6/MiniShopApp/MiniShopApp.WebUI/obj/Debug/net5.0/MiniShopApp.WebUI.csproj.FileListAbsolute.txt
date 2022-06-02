@@ -176,3 +176,7 @@ F:\github\Lesson\Week_14\MiniShopApp6\MiniShopApp\MiniShopApp.WebUI\obj\Debug\ne
 F:\github\Lesson\Week_14\MiniShopApp6\MiniShopApp\MiniShopApp.WebUI\obj\Debug\net5.0\MiniShopApp.WebUI.genruntimeconfig.cache
 F:\github\Lesson\Week_14\MiniShopApp6\MiniShopApp\MiniShopApp.WebUI\obj\Debug\net5.0\Razor\Views\Admin\RoleEdit.cshtml.g.cs
 F:\github\Lesson\Week_14\MiniShopApp6\MiniShopApp\MiniShopApp.WebUI\obj\Debug\net5.0\Razor\Views\Account\AccessDenied.cshtml.g.cs
+F:\github\Lesson\Week_14\MiniShopApp6\MiniShopApp\MiniShopApp.WebUI\obj\Debug\net5.0\Razor\Views\Admin\UserList.cshtml.g.cs
+F:\github\Lesson\Week_14\MiniShopApp6\MiniShopApp\MiniShopApp.WebUI\obj\Debug\net5.0\Razor\Views\Admin\UserEdit.cshtml.g.cs
+F:\github\Lesson\Week_14\MiniShopApp6\MiniShopApp\MiniShopApp.WebUI\bin\Debug\net5.0\MiniShopApp.Core.dll
+F:\github\Lesson\Week_14\MiniShopApp6\MiniShopApp\MiniShopApp.WebUI\bin\Debug\net5.0\MiniShopApp.Core.pdb
