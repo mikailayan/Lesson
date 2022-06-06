@@ -81,6 +81,11 @@ namespace MiniShopApp.WebUI
 
             services.AddScoped<IProductRepository, EfCoreProductRepository>();
             services.AddScoped<ICategoryRepository, EfCoreCategoryRepository>();
+            services.AddScoped<ICardRepository, EfCoreCardReository>();
+
+
+            services.AddScoped<ICardService, CardManager>();
+
             services.AddScoped<IProductService, ProductManager>();
             //Proje boyunca ICategoryService çaðrýldýðýnda, CategoryManager'i kullan.
             services.AddScoped<ICategoryService, CategoryManager>();
@@ -111,6 +116,11 @@ namespace MiniShopApp.WebUI
 
             app.UseEndpoints(endpoints =>
             {
+                endpoints.MapControllerRoute(
+                   name: "card",
+                   pattern: "card",
+                   defaults: new { controller = "Card", action = "index" }
+                   );
                 endpoints.MapControllerRoute(
                     name: "adminuserlist",
                     pattern: "admin/user/list",

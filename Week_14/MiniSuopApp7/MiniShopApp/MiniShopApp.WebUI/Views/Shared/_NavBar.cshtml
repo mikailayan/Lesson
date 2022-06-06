@@ -17,6 +17,9 @@
 
                         @if (User.Identity.IsAuthenticated)
                         {
+                            <li class="nav-item">
+                                <a href="card" class="nav-link text-dark">Card</a>
+                            </li>
                             @if (User.IsInRole("Admin"))
                             {
                                 <li class="nav-item">
