@@ -7,6 +7,6 @@
         public Product Product { get; set; }
         public int CardId { get; set; }
         public Card Card { get; set; }
-        public int Qantity { get; set; }
+        public int Quantity { get; set; }
     }
 }

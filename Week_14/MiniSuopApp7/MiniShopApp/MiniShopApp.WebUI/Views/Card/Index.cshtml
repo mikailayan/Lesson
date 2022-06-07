@@ -17,7 +17,7 @@ else
     <div class="row">
         <div class="col-md-8">
             <div><h6>Card Items</h6></div>
-            <table>
+            <table class="table table-sm table-hover">
                 <thead>
                     <tr>
                         <th>Image</th>
@@ -40,7 +40,7 @@ else
                             <td>@(cardItem.Price*cardItem.Quantity)</td>
                             <td>
                                 <form asp-action="DeleteFromCard" method="post" asp-controller="Card">
-                                    <input type="hidden" name="ProudctId" value="@cardItem.ProductId" />
+                                    <input type="hidden" name="productId" value="@cardItem.ProductId" />
                                     <button type="submit" class="btn btn-sm btn-danger">
                                         <i class="fa-solid fa-circle-xmark"></i>
                                     </button>
@@ -53,7 +53,7 @@ else
         </div>
         <div class="col-md-4">
             <div><h6>Card Summary</h6></div>
-            <table>
+            <table class="table table-sm">
                 <tbody>
                     <tr>
                         <th>Card Total</th>
@@ -69,6 +69,19 @@ else
                     </tr>
                 </tbody>
             </table>
+            <div>
+                <a href="/" class="btn btn-primary">
+                    <i class="fa-solid fa-circle-arrow-left"></i>
+                    Continue Shopping
+                </a>
+                <a href="/card/checkout" class="btn btn-success">
+                    Checkout
+                    <i class="fa-solid fa-circle-arrow-right"></i>
+                </a>
+            </div>
+            <div>
+               
+            </div>
         </div>
     </div>
 }
