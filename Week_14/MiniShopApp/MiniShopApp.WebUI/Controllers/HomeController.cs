@@ -1,7 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using MiniShopApp.Business.Abstract;
-using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
@@ -20,6 +19,5 @@ namespace MiniShopApp.WebUI.Controllers
         {
             return View(_productService.GetHomePageProducts());
         }
-        //product managerdaki GetAll'ı çağırıyor.(bence)
     }
 }

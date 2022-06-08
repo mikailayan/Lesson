@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace MiniShopApp.Business.Abstract
 {
-    public interface ICategoryService 
+    public interface ICategoryService
     {
         Category GetById(int id);
         List<Category> GetAll();

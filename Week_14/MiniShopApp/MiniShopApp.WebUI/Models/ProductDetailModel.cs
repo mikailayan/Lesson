@@ -1,5 +1,4 @@
-﻿
-using MiniShopApp.Entity;
+﻿using MiniShopApp.Entity;
 using System;
 using System.Collections.Generic;
 using System.Linq;

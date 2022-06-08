@@ -12,6 +12,6 @@ namespace MiniShopApp.Entity
         public string Name { get; set; }
         public string Description { get; set; }
         public string Url { get; set; }
-        public List<ProductCategory> ProductCategories { get; set; } //category ıd productcategory'de defalarca geçebilir
+        public List<ProductCategory> ProductCategories { get; set; }
     }
 }

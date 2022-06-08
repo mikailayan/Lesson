@@ -8,16 +8,26 @@ using System.Threading.Tasks;
 
 namespace MiniShopApp.Data.Concrete.EfCore
 {
-    public class EfCoreGenericRepository<TEntity, TContext> : IRepository<TEntity> where TEntity : class where TContext:DbContext, new()
+    public class EfCoreGenericRepository<TEntity, TContext> : IRepository<TEntity>
+        where TEntity: class
+        where TContext: DbContext, new()
     {
         public void Create(TEntity entity)
         {
-            throw new NotImplementedException();
+            using (var context = new TContext())
+            {
+                context.Set<TEntity>().Add(entity);
+                context.SaveChanges();
+            }
         }
 
         public void Delete(TEntity entity)
         {
-            throw new NotImplementedException();
+            using (var context = new TContext())
+            {
+                context.Set<TEntity>().Remove(entity);
+                context.SaveChanges();
+            }
         }
 
         public List<TEntity> GetAll()
@@ -30,12 +40,19 @@ namespace MiniShopApp.Data.Concrete.EfCore
 
         public TEntity GetById(int id)
         {
-            throw new NotImplementedException();
+            using (var context = new TContext())
+            {
+                return context.Set<TEntity>().Find(id);
+            }
         }
 
-        public void Update(TEntity entity)
+        public virtual void Update(TEntity entity)
         {
-            throw new NotImplementedException();
+            using (var context = new MiniShopContext())
+            {
+                context.Entry(entity).State = EntityState.Modified;
+                context.SaveChanges();
+            }
         }
     }
 }

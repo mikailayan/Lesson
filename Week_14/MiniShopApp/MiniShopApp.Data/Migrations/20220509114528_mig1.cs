@@ -41,7 +41,7 @@ namespace MiniShopApp.Data.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "productCategories",
+                name: "ProductCategories",
                 columns: table => new
                 {
                     CategoryId = table.Column<int>(type: "INTEGER", nullable: false),
@@ -49,15 +49,15 @@ namespace MiniShopApp.Data.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_productCategories", x => new { x.CategoryId, x.ProductId });
+                    table.PrimaryKey("PK_ProductCategories", x => new { x.CategoryId, x.ProductId });
                     table.ForeignKey(
-                        name: "FK_productCategories_Categories_CategoryId",
+                        name: "FK_ProductCategories_Categories_CategoryId",
                         column: x => x.CategoryId,
                         principalTable: "Categories",
                         principalColumn: "CategoryId",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_productCategories_Products_ProductId",
+                        name: "FK_ProductCategories_Products_ProductId",
                         column: x => x.ProductId,
                         principalTable: "Products",
                         principalColumn: "ProductId",
@@ -65,15 +65,15 @@ namespace MiniShopApp.Data.Migrations
                 });
 
             migrationBuilder.CreateIndex(
-                name: "IX_productCategories_ProductId",
-                table: "productCategories",
+                name: "IX_ProductCategories_ProductId",
+                table: "ProductCategories",
                 column: "ProductId");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "productCategories");
+                name: "ProductCategories");
 
             migrationBuilder.DropTable(
                 name: "Categories");

@@ -1,18 +1,44 @@
-import React from 'react'
+import React from "react";
 
-function Foods() {
+function Foods(food) {
   return (
-    <div>
-        <div className="card" style={{width: '18rem'}}>
-        <img src="https://www.burgerking.com.tr/cmsfiles/products/rodeo-whopper-menu.png?v=188" className="card-img-top" alt="..." />
-        <div className="card-body">
-          <h5 className="card-title">Rodeo Whopper</h5>
-          <p className="card-text">Whopper® eti, büyük boy susamlı sandviç ekmeği, mayonez, doğranmış marul, soğan halkaları, nefis barbekü sosu ve 2 adet cheddar peynirinden oluşan Whopper® lezzeti. Enfes patates kızartması ve içeceğiyle birlikte Rodeo Whopper® Menü keyfini istediğin gibi yaşa!</p>
-          <a href="#" className="btn btn-primary">Satın al</a>
+    <div className="bg-light mt-5 shadow-lg p-3">
+      <div>
+        <h1 className="pt-5">{food.name}</h1>
+        <img
+          className="img-fluid"
+          src="https://kasapburger.com.tr/wp-content/uploads/2022/01/slide-1-1.png"
+          style={{ height: "200px" }}
+        />
+      </div>
+
+      <div className="flex-container">
+        <div className="w-100">
+          <p>Seçenekler</p>
+          <select className="form-select" value="0">
+            <option>küçük</option>
+            <option>büyük</option>
+          </select>
+        </div>
+        <div className="w-100">
+          <p>Miktar</p>
+          <select className="form-select" value="1">
+            <option>1</option>
+            <option>2</option>
+          </select>
+        </div>
+      </div>
+
+      <div className="flex-container">
+        <div className="m-1 w-100 mt-3">
+          <h1>Price: </h1>
+        </div>
+        <div className="m-1 w-100 mt-3">
+          <button className="btn">Sepete Ekle </button>
         </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default Foods
+export default Foods;

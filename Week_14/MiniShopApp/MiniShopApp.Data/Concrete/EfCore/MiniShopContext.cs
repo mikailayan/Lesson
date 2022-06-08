@@ -12,15 +12,20 @@ namespace MiniShopApp.Data.Concrete.EfCore
     {
         public DbSet<Category> Categories { get; set; }
         public DbSet<Product> Products { get; set; }
-        public DbSet<ProductCategory> productCategories { get; set; }
+        public DbSet<ProductCategory> ProductCategories { get; set; }
+        public DbSet<Card> Cards { get; set; }
+        public DbSet<CardItem> CardItems { get; set; }
+        public DbSet<Order> Orders { get; set; }
+        public DbSet<OrderItem> OrderItems { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlite("Data Source=MiniShopAppDb"); //veritabanı bağlantısını sağlanması varsa yoksa yeniden oluştur.
+            optionsBuilder.UseSqlite("Data Source=MiniShopAppDb");
         }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<ProductCategory>()   //product categori unique olması için aynı kayıt tekrar girilmesin istiyoruz.
+            modelBuilder.Entity<ProductCategory>()
                 .HasKey(pc => new { pc.CategoryId, pc.ProductId });
         }
     }
