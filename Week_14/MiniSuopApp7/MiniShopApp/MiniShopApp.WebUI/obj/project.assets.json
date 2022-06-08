@@ -11,6 +11,18 @@
           "lib/netstandard2.0/Humanizer.dll": {}
         }
       },
+      "Iyzipay/2.1.39": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "11.0.2"
+        },
+        "compile": {
+          "lib/netstandard2.0/Iyzipay.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Iyzipay.dll": {}
+        }
+      },
       "Microsoft.AspNetCore.Cryptography.Internal/5.0.16": {
         "type": "package",
         "compile": {
@@ -567,6 +579,20 @@
         "lib/netstandard2.0/Humanizer.dll",
         "lib/netstandard2.0/Humanizer.xml",
         "logo.png"
+      ]
+    },
+    "Iyzipay/2.1.39": {
+      "sha512": "e3NdsIBQuEWMfPHY5hqIorHqP5tldHwNSztdxwKKVgUe/ajtGlYFTthfdMARk4mkHkclvTsz4DI/V7xs3xJwJg==",
+      "type": "package",
+      "path": "iyzipay/2.1.39",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "iyzipay.2.1.39.nupkg.sha512",
+        "iyzipay.nuspec",
+        "lib/net45/Iyzipay.dll",
+        "lib/netstandard1.3/Iyzipay.dll",
+        "lib/netstandard2.0/Iyzipay.dll"
       ]
     },
     "Microsoft.AspNetCore.Cryptography.Internal/5.0.16": {
@@ -1443,7 +1469,8 @@
       "MiniShopApp.Business >= 1.0.0",
       "MiniShopApp.Core >= 1.0.0",
       "MiniShopApp.Data >= 1.0.0",
-      "Newtonsoft.Json >= 13.0.1"
+      "Newtonsoft.Json >= 13.0.1",
+      "iyzipay >= 2.1.39"
     ]
   },
   "packageFolders": {
@@ -1526,6 +1553,10 @@
           "Newtonsoft.Json": {
             "target": "Package",
             "version": "[13.0.1, )"
+          },
+          "iyzipay": {
+            "target": "Package",
+            "version": "[2.1.39, )"
           }
         },
         "imports": [

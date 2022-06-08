@@ -183,3 +183,4 @@ F:\github\Lesson\Week_14\MiniSuopApp7\MiniShopApp\MiniShopApp.WebUI\obj\Debug\ne
 F:\github\Lesson\Week_14\MiniSuopApp7\MiniShopApp\MiniShopApp.WebUI\obj\Debug\net5.0\Razor\Views\Admin\UserCreate.cshtml.g.cs
 F:\github\Lesson\Week_14\MiniSuopApp7\MiniShopApp\MiniShopApp.WebUI\obj\Debug\net5.0\Razor\Views\Card\Index.cshtml.g.cs
 F:\github\Lesson\Week_14\MiniSuopApp7\MiniShopApp\MiniShopApp.WebUI\obj\Debug\net5.0\Razor\Views\Card\CheckOut.cshtml.g.cs
+F:\github\Lesson\Week_14\MiniSuopApp7\MiniShopApp\MiniShopApp.WebUI\bin\Debug\net5.0\Iyzipay.dll
