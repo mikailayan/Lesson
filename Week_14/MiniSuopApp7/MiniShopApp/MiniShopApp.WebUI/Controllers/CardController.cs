@@ -6,12 +6,15 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using MiniShopApp.Business.Abstract;
 using MiniShopApp.Core;
+using MiniShopApp.Entity;
 using MiniShopApp.WebUI.Identity;
 using MiniShopApp.WebUI.Models;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using OrderItem = MiniShopApp.Entity.OrderItem;
 
 namespace MiniShopApp.WebUI.Controllers
 {
@@ -20,15 +23,18 @@ namespace MiniShopApp.WebUI.Controllers
     {
         private ICardService _cardService;
         private UserManager<User> _userManager;
+        private IOrderService _orderService;
 
-        public CardController(ICardService cardService, UserManager<User> userManager)
+        public CardController(ICardService cardService, UserManager<User> userManager, IOrderService orderService)
         {
             _cardService = cardService;
             _userManager = userManager;
+            _orderService = orderService;
         }
 
         public IActionResult Index()
         {
+            Luhnalgorithm(Kartno);
             var card = _cardService.GetCardByUserId(_userManager.GetUserId(User));
             var model = new CardModel()
             {
@@ -117,7 +123,7 @@ namespace MiniShopApp.WebUI.Controllers
                 var payment = PaymentProcess(orderModel);
                 if (payment.Status=="success")
                 {
-                    //SaveOrder();
+                    SaveOrder(orderModel, userId, payment);
                     //ClearCard();
                     TempData["Message"] = JobManager.CreateMessage("Bilgi", "Ödemeniz başarıyla gerçekleşmiştir", "success");
                     return Redirect("~/");
@@ -128,6 +134,38 @@ namespace MiniShopApp.WebUI.Controllers
                 }
             }
             return View(orderModel);
+        }
+
+        private void SaveOrder(OrderModel orderModel, string userId, Payment payment)
+        {
+            var order = new Order();
+            order.OrderNumber = new Random().Next(111111111, 999999999).ToString();
+            order.OrderState = EnumOrderState.Completed;
+            order.PaymentType = EnumPaymentType.CreditCard;
+            order.PaymentId = payment.PaymentId;
+            order.ConversationId = payment.ConversationId;
+            order.OrderDate = new DateTime();
+            order.FirstName = orderModel.FirstName;
+            order.LastName = orderModel.LastName;
+            order.UserId = userId;
+            order.Address = orderModel.Address;
+            order.City = orderModel.City;
+            order.Phone = orderModel.Phone;
+            order.Email = orderModel.Email;
+            order.Note = orderModel.Note;
+
+            order.OrderItems = new List<OrderItem>();
+            foreach (var item in orderModel.CardModel.CardItems)
+            {
+                var orderItem = new OrderItem()
+                {
+                    Price = item.Price,
+                    Quantity = item.Quantity,
+                    ProductId = item.ProductId,
+                };
+                order.OrderItems.Add(orderItem);
+            }
+            _orderService.Create(order);
         }
 
         private Payment PaymentProcess(OrderModel orderModel)
@@ -150,7 +188,11 @@ namespace MiniShopApp.WebUI.Controllers
 
             PaymentCard paymentCard = new PaymentCard(); //ödeme yapacak kişinin kart bilgileri
             paymentCard.CardHolderName = orderModel.CardName;
-            paymentCard.CardNumber = orderModel.CardNumber;
+            if (Luhnalgorithm(orderModel.CardNumber))
+            {
+                paymentCard.CardNumber = orderModel.CardNumber;
+            }
+            //paymentCard.CardNumber = orderModel.CardNumber;
             paymentCard.ExpireMonth = orderModel.ExpirationMonth;
             paymentCard.ExpireYear = orderModel.ExpirationYear;
             paymentCard.Cvc = orderModel.Cvc;
@@ -203,6 +245,39 @@ namespace MiniShopApp.WebUI.Controllers
             request.BasketItems = basketItems;
 
             return Payment.Create(request, options);
+        }
+
+        string Kartno = "6242342342423424";
+        public bool Luhnalgorithm(string Kartno)
+        {
+            int toplam = 0;
+            if (Kartno.Length % 2 ==0)
+            {
+                for (int i = 0; i < Kartno.Length; i += 2)
+                {
+                    int carpım = Convert.ToInt32(Kartno[i].ToString()) * 2;
+                    if (carpım >=10)
+                    {
+                        string buyuk = Convert.ToString(carpım);
+                        toplam = toplam + Convert.ToInt32(buyuk[0].ToString());
+                        toplam = toplam + Convert.ToInt32(buyuk[1].ToString());
+
+                    }
+                    else
+                    {
+                        toplam = toplam + carpım;
+                    }
+                }
+                for (int i = 1; i < Kartno.Length; i+=2)
+                {
+                    toplam = toplam + Convert.ToInt32(Kartno[i].ToString());
+                }
+                if (toplam % 10 ==0)
+                {
+                    return true;
+                }
+            }
+            return false;
         }
     }
 }

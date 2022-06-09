@@ -1,6 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 
 function Foods(food) {
+  const [quantity,setQuantity] = useState (1);
+  const [varient,setVarient] = ["small"];
+  
   return (
     <div className="bg-light mt-5 shadow-lg p-3">
       <div>
@@ -15,7 +18,10 @@ function Foods(food) {
       <div className="flex-container">
         <div className="w-100">
           <p>Seçenekler</p>
-          <select className="form-select" value="0">
+          <select className="form-select" value={varient} onChange={(e)=>setVarient(e.target.value)}>
+            {food.varient.map((varient)=>(
+              <option value={varient}>{varient}</option>
+            ))}
             <option>küçük</option>
             <option>büyük</option>
           </select>
