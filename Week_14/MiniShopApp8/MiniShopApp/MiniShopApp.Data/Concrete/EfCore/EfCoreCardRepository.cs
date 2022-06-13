@@ -9,45 +9,39 @@ using System.Threading.Tasks;
 
 namespace MiniShopApp.Data.Concrete.EfCore
 {
-    public class EfCoreCardRepository : EfCoreGenericRepository<Card, MiniShopContext>, ICardRepository
+    public class EfCoreCardRepository : EfCoreGenericRepository<Card>, ICardRepository
     {
-        public void ClearCard(int cardId)
+        public EfCoreCardRepository(MiniShopContext context):base(context)
         {
-            using (var context = new MiniShopContext())
-            {
+
+        }
+        private MiniShopContext MiniShopContext
+        {
+            get { return _context as MiniShopContext; } 
+        }
+        public void ClearCard(int cardId)
+        {       
                 var query = @"DELETE FROM CardItems WHERE CardId=@p0";
-                context.Database.ExecuteSqlRaw(query, cardId);
-            }
+                MiniShopContext.Database.ExecuteSqlRaw(query, cardId);
         }
 
         public void DeleteFromCard(int cardId, int productId)
         {
-            using (var context = new MiniShopContext())
-            {
                 var query = @"DELETE FROM CardItems WHERE CardId=@p0 AND ProductId=@p1";
-                context.Database.ExecuteSqlRaw(query, cardId, productId);
-            }
+                MiniShopContext.Database.ExecuteSqlRaw(query, cardId, productId);
        }
 
         public Card GetCardByUserId(string userId)
         {
-            using (var context = new MiniShopContext())
-            {
-                return context
+                return MiniShopContext
                     .Cards
                     .Include(i => i.CardItems)
                     .ThenInclude(i => i.Product)
                     .FirstOrDefault(i => i.UserId == userId);
-            }
         }
         public override void Update(Card entity)
         {
-            using (var context = new MiniShopContext())
-            {
-                context.Cards.Update(entity);
-                context.SaveChanges();
-            }
-            base.Update(entity);
+            MiniShopContext.Cards.Update(entity);
         }
     }
 }

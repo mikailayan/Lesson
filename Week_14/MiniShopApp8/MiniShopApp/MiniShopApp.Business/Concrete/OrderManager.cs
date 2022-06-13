@@ -11,21 +11,21 @@ namespace MiniShopApp.Business.Concrete
 {
     public class OrderManager : IOrderService
     {
-        private IOrderRepository _orderRepository;
+        private readonly IUnitOfWork _unitOfWork;
 
-        public OrderManager(IOrderRepository orderRepository)
+        public OrderManager(IUnitOfWork unitOfWork)
         {
-            _orderRepository = orderRepository;
+            _unitOfWork = unitOfWork;
         }
 
         public void Create(Order entity)
         {
-            _orderRepository.Create(entity);
+            _unitOfWork.Order.Create(entity);
         }
 
         public List<Order> GetOrders(string userId)
         {
-           return _orderRepository.GetOrders(userId);
+           return _unitOfWork.Order.GetOrders(userId);
         }
     }
 }
