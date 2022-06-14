@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "6DCkoIA/ORG19QLXzqO7Wo9+E1rtXiA19RfexOCYJjfVOU2ssKnpmRCzpV91kt3byjEfaOHBK8iLik9/u/WJvw==",
+  "success": true,
+  "projectFilePath": "F:\\github\\Lesson\\Week_14\\MiniShopApp9\\MiniShopApp\\MiniShopApp.WebApi\\MiniShopApp.WebApi.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\mikail\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\mikail\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\mikail\\.nuget\\packages\\swashbuckle.aspnetcore\\5.6.3\\swashbuckle.aspnetcore.5.6.3.nupkg.sha512",
+    "C:\\Users\\mikail\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\5.6.3\\swashbuckle.aspnetcore.swagger.5.6.3.nupkg.sha512",
+    "C:\\Users\\mikail\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\5.6.3\\swashbuckle.aspnetcore.swaggergen.5.6.3.nupkg.sha512",
+    "C:\\Users\\mikail\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\5.6.3\\swashbuckle.aspnetcore.swaggerui.5.6.3.nupkg.sha512"
+  ],
+  "logs": []
+}
