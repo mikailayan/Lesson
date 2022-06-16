@@ -15,6 +15,8 @@ namespace MiniShopApp.Business.Abstract
         Task<Product> CreateAsync(Product entity);
         void Update(Product entity);
         void Delete(Product entity);
+        Task DeleteAysnc(Product entity);
+
         List<Product> GetProductsByCategory(string name, int page, int pageSize);
         Product GetProductDetails(string url);
         List<Product> GetHomePageProducts();
@@ -22,6 +24,7 @@ namespace MiniShopApp.Business.Abstract
         int GetCountByCategory(string category);
         void Create(Product entity, int[] categoryIds);
         void Update(Product entity, int[] categoryIds);
+        Task UpdateProductAsync(Product entityToUpdate, Product entity);
         Product GetByIdWithCategories(int id);
     }
 }

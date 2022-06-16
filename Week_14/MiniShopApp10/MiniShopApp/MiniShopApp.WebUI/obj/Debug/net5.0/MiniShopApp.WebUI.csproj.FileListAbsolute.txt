@@ -209,3 +209,4 @@ F:\github\Lesson\Week_14\MiniShopApp10\MiniShopApp\MiniShopApp.WebUI\obj\Debug\n
 F:\github\Lesson\Week_14\MiniShopApp10\MiniShopApp\MiniShopApp.WebUI\obj\Debug\net5.0\ref\MiniShopApp.WebUI.dll
 F:\github\Lesson\Week_14\MiniShopApp10\MiniShopApp\MiniShopApp.WebUI\obj\Debug\net5.0\MiniShopApp.WebUI.pdb
 F:\github\Lesson\Week_14\MiniShopApp10\MiniShopApp\MiniShopApp.WebUI\obj\Debug\net5.0\MiniShopApp.WebUI.genruntimeconfig.cache
+F:\github\Lesson\Week_14\MiniShopApp10\MiniShopApp\MiniShopApp.WebUI\obj\Debug\net5.0\Razor\Views\Home\GetProductsFromRestFullApi.cshtml.g.cs
