@@ -21,6 +21,7 @@ namespace MiniShopApp.WebApi
 {
     public class Startup
     {
+        readonly string MyPolicy = "_MyAllowAll";
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
@@ -41,6 +42,16 @@ namespace MiniShopApp.WebApi
             services.AddScoped<IOrderService, OrderManager>();
 
             services.AddControllers();
+            services.AddCors(
+                option =>
+                {
+                    option.AddPolicy(
+                        name: MyPolicy,
+                        policy =>
+                        {
+                            policy.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader();
+                        });
+                });
             //services.AddSwaggerGen(c =>
             //{
             //    c.SwaggerDoc("v1", new OpenApiInfo { Title = "MiniShopApp.WebApi", Version = "v1" });
@@ -60,6 +71,8 @@ namespace MiniShopApp.WebApi
             app.UseHttpsRedirection();
 
             app.UseRouting();
+
+            app.UseCors(MyPolicy);
 
             app.UseAuthorization();
 

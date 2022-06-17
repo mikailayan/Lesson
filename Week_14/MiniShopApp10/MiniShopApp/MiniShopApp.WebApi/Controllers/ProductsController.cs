@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using MiniShopApp.Business.Abstract;
 using MiniShopApp.Entity;
+using MiniShopApp.WebApi.DTO;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -24,7 +25,14 @@ namespace MiniShopApp.WebApi.Controllers
         public async Task<IActionResult> GetProducts()
         {
             var products = await _productService.GetAll();
-            return Ok(products);
+            //Burada bana dönmüş olan içerisinde product tipinde veriler barındıran listemin içindeki tipi dönüştürüp transfer etmek istiyorum.
+            //Data Transfer Object -DTO
+            var productDTOs = new List<ProductDTO>();
+            foreach (var product in products)
+            {
+                productDTOs.Add(ProductToDTO(product));
+            }
+            return Ok(productDTOs);
         }
         [HttpGet("{id}")]
         public async Task<IActionResult> GetProduct(int id)
@@ -34,13 +42,13 @@ namespace MiniShopApp.WebApi.Controllers
             {
                 return NotFound();
             }
-            return Ok(product);
+            return Ok(ProductToDTO(product));
         }
         [HttpPost]
         public async Task<IActionResult> CreateProduct(Product entity)
         {
             await _productService.CreateAsync(entity);
-            return CreatedAtAction("GetProduct", new { id = entity.ProductId }, entity);
+            return CreatedAtAction("GetProduct", new { id = entity.ProductId }, ProductToDTO(entity));
         }
         [HttpPut("{id}")]
         public async Task<IActionResult> UpdateProduct(int id, Product entity)
@@ -69,6 +77,17 @@ namespace MiniShopApp.WebApi.Controllers
             return NoContent();
         }
 
-
+        private static ProductDTO ProductToDTO(Product product)
+        {
+            return new ProductDTO
+            {
+                ProductId = product.ProductId,
+                Name = product.Name,
+                Price = product.Price,
+                Description = product.Description,
+                ImageUrl = product.ImageUrl,
+                Url = product.Url
+            };
+        }
     }
 }

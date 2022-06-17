@@ -32,6 +32,7 @@ namespace MiniShopApp.WebUI.Controllers
                     string contentResponse = await response.Content.ReadAsStringAsync(); //içeriği bana string olarak getir.
                     products = JsonConvert.DeserializeObject<List<Product>>(contentResponse); //contentResponse'u oku ve her birinin içinde product liste olan products a ata.
                 }
+                
             }
             return View(products);
 
