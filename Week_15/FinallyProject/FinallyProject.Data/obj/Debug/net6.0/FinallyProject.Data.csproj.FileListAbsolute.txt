@@ -1,0 +1,17 @@
+F:\github\Lesson\Week_15\FinallyProject\FinallyProject.Data\obj\Debug\net6.0\FinallyProject.Data.csproj.AssemblyReference.cache
+F:\github\Lesson\Week_15\FinallyProject\FinallyProject.Data\obj\Debug\net6.0\FinallyProject.Data.GeneratedMSBuildEditorConfig.editorconfig
+F:\github\Lesson\Week_15\FinallyProject\FinallyProject.Data\obj\Debug\net6.0\FinallyProject.Data.AssemblyInfoInputs.cache
+F:\github\Lesson\Week_15\FinallyProject\FinallyProject.Data\obj\Debug\net6.0\FinallyProject.Data.AssemblyInfo.cs
+F:\github\Lesson\Week_15\FinallyProject\FinallyProject.Data\obj\Debug\net6.0\FinallyProject.Data.csproj.CoreCompileInputs.cache
+F:\github\Lesson\Week_15\FinallyProject\FinallyProject.Data\bin\Debug\net6.0\FinallyProject.Data.deps.json
+F:\github\Lesson\Week_15\FinallyProject\FinallyProject.Data\bin\Debug\net6.0\FinallyProject.Data.runtimeconfig.json
+F:\github\Lesson\Week_15\FinallyProject\FinallyProject.Data\bin\Debug\net6.0\FinallyProject.Data.dll
+F:\github\Lesson\Week_15\FinallyProject\FinallyProject.Data\bin\Debug\net6.0\FinallyProject.Data.pdb
+F:\github\Lesson\Week_15\FinallyProject\FinallyProject.Data\bin\Debug\net6.0\FinallyProject.Entity.dll
+F:\github\Lesson\Week_15\FinallyProject\FinallyProject.Data\bin\Debug\net6.0\FinallyProject.Entity.pdb
+F:\github\Lesson\Week_15\FinallyProject\FinallyProject.Data\obj\Debug\net6.0\FinallyProject.Data.csproj.CopyComplete
+F:\github\Lesson\Week_15\FinallyProject\FinallyProject.Data\obj\Debug\net6.0\FinallyProject.Data.dll
+F:\github\Lesson\Week_15\FinallyProject\FinallyProject.Data\obj\Debug\net6.0\refint\FinallyProject.Data.dll
+F:\github\Lesson\Week_15\FinallyProject\FinallyProject.Data\obj\Debug\net6.0\FinallyProject.Data.pdb
+F:\github\Lesson\Week_15\FinallyProject\FinallyProject.Data\obj\Debug\net6.0\FinallyProject.Data.genruntimeconfig.cache
+F:\github\Lesson\Week_15\FinallyProject\FinallyProject.Data\obj\Debug\net6.0\ref\FinallyProject.Data.dll

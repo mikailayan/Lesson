@@ -1,0 +1,12 @@
+F:\github\Lesson\Week_15\FinallyProject\FinallyProject.Entity\bin\Debug\net6.0\FinallyProject.Entity.deps.json
+F:\github\Lesson\Week_15\FinallyProject\FinallyProject.Entity\bin\Debug\net6.0\FinallyProject.Entity.dll
+F:\github\Lesson\Week_15\FinallyProject\FinallyProject.Entity\bin\Debug\net6.0\FinallyProject.Entity.pdb
+F:\github\Lesson\Week_15\FinallyProject\FinallyProject.Entity\obj\Debug\net6.0\FinallyProject.Entity.csproj.AssemblyReference.cache
+F:\github\Lesson\Week_15\FinallyProject\FinallyProject.Entity\obj\Debug\net6.0\FinallyProject.Entity.GeneratedMSBuildEditorConfig.editorconfig
+F:\github\Lesson\Week_15\FinallyProject\FinallyProject.Entity\obj\Debug\net6.0\FinallyProject.Entity.AssemblyInfoInputs.cache
+F:\github\Lesson\Week_15\FinallyProject\FinallyProject.Entity\obj\Debug\net6.0\FinallyProject.Entity.AssemblyInfo.cs
+F:\github\Lesson\Week_15\FinallyProject\FinallyProject.Entity\obj\Debug\net6.0\FinallyProject.Entity.csproj.CoreCompileInputs.cache
+F:\github\Lesson\Week_15\FinallyProject\FinallyProject.Entity\obj\Debug\net6.0\FinallyProject.Entity.dll
+F:\github\Lesson\Week_15\FinallyProject\FinallyProject.Entity\obj\Debug\net6.0\refint\FinallyProject.Entity.dll
+F:\github\Lesson\Week_15\FinallyProject\FinallyProject.Entity\obj\Debug\net6.0\FinallyProject.Entity.pdb
+F:\github\Lesson\Week_15\FinallyProject\FinallyProject.Entity\obj\Debug\net6.0\ref\FinallyProject.Entity.dll

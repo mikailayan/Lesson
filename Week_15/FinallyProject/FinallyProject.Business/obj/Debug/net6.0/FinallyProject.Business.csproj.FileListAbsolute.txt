@@ -1,0 +1,15 @@
+F:\github\Lesson\Week_15\FinallyProject\FinallyProject.Business\bin\Debug\net6.0\FinallyProject.Business.deps.json
+F:\github\Lesson\Week_15\FinallyProject\FinallyProject.Business\bin\Debug\net6.0\FinallyProject.Business.dll
+F:\github\Lesson\Week_15\FinallyProject\FinallyProject.Business\bin\Debug\net6.0\FinallyProject.Business.pdb
+F:\github\Lesson\Week_15\FinallyProject\FinallyProject.Business\obj\Debug\net6.0\FinallyProject.Business.csproj.AssemblyReference.cache
+F:\github\Lesson\Week_15\FinallyProject\FinallyProject.Business\obj\Debug\net6.0\FinallyProject.Business.GeneratedMSBuildEditorConfig.editorconfig
+F:\github\Lesson\Week_15\FinallyProject\FinallyProject.Business\obj\Debug\net6.0\FinallyProject.Business.AssemblyInfoInputs.cache
+F:\github\Lesson\Week_15\FinallyProject\FinallyProject.Business\obj\Debug\net6.0\FinallyProject.Business.AssemblyInfo.cs
+F:\github\Lesson\Week_15\FinallyProject\FinallyProject.Business\obj\Debug\net6.0\FinallyProject.Business.csproj.CoreCompileInputs.cache
+F:\github\Lesson\Week_15\FinallyProject\FinallyProject.Business\obj\Debug\net6.0\FinallyProject.Business.dll
+F:\github\Lesson\Week_15\FinallyProject\FinallyProject.Business\obj\Debug\net6.0\refint\FinallyProject.Business.dll
+F:\github\Lesson\Week_15\FinallyProject\FinallyProject.Business\obj\Debug\net6.0\FinallyProject.Business.pdb
+F:\github\Lesson\Week_15\FinallyProject\FinallyProject.Business\obj\Debug\net6.0\ref\FinallyProject.Business.dll
+F:\github\Lesson\Week_15\FinallyProject\FinallyProject.Business\bin\Debug\net6.0\FinallyProject.Entity.dll
+F:\github\Lesson\Week_15\FinallyProject\FinallyProject.Business\bin\Debug\net6.0\FinallyProject.Entity.pdb
+F:\github\Lesson\Week_15\FinallyProject\FinallyProject.Business\obj\Debug\net6.0\FinallyProject.Business.csproj.CopyComplete

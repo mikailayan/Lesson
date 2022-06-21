@@ -1,0 +1,8 @@
+F:\github\Lesson\Week_15\FinallyProject\FinallyProject.WebUI\obj\Debug\net6.0\FinallyProject.WebUI.csproj.AssemblyReference.cache
+F:\github\Lesson\Week_15\FinallyProject\FinallyProject.WebUI\obj\Debug\net6.0\FinallyProject.WebUI.GeneratedMSBuildEditorConfig.editorconfig
+F:\github\Lesson\Week_15\FinallyProject\FinallyProject.WebUI\obj\Debug\net6.0\FinallyProject.WebUI.AssemblyInfoInputs.cache
+F:\github\Lesson\Week_15\FinallyProject\FinallyProject.WebUI\obj\Debug\net6.0\FinallyProject.WebUI.AssemblyInfo.cs
+F:\github\Lesson\Week_15\FinallyProject\FinallyProject.WebUI\obj\Debug\net6.0\FinallyProject.WebUI.csproj.CoreCompileInputs.cache
+F:\github\Lesson\Week_15\FinallyProject\FinallyProject.WebUI\obj\Debug\net6.0\FinallyProject.WebUI.MvcApplicationPartsAssemblyInfo.cache
+F:\github\Lesson\Week_15\FinallyProject\FinallyProject.WebUI\obj\Debug\net6.0\FinallyProject.WebUI.RazorAssemblyInfo.cache
+F:\github\Lesson\Week_15\FinallyProject\FinallyProject.WebUI\obj\Debug\net6.0\FinallyProject.WebUI.RazorAssemblyInfo.cs
